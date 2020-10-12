@@ -4,9 +4,8 @@ type: ssh
 name: default
 
 server:
-host:
-    from_secret: host
-  user: root
+host: 144.172.120.140
+  user: opensauce
   password:
     from_secret: password
 
