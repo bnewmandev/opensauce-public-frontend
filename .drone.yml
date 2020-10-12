@@ -1,0 +1,18 @@
+---
+kind: pipeline
+type: ssh
+name: default
+
+server:
+host:
+    from_secret: host
+  user: root
+  password:
+    from_secret: password
+
+steps:
+- name: git pull
+  commands:
+  - git stash & git pull
+
+...
