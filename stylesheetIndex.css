@@ -1,0 +1,59 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+.column {
+    flex: 20%;
+    max-width: 20%;
+    padding: 0 4px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .column img {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: "300";
+    height: "300";
+    
+  }
+
+  figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 0px;
+    text-align: center;
+    font-size: 28px;
+    width: 300px;
+    margin: 0px;
+  }
+
+  header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+  .HeaderTable{
+      width: "100%"
+  }
+
+  .HeaderTable th {
+      font-size: 60px;
+      text-align: center;
+
+  }
+
+  table {
+      border-spacing: 100px 10px;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+  }
