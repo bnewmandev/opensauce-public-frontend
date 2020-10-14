@@ -1,95 +1,54 @@
-
-.topnav li {
-    list-style-type: none;
-    float: left;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 34px;
-    color: #707070;
+nav {
+  box-sizing: border-box;
+  width: 1920px;
+  border: 1px solid #707070;
+  z-index: 1;
+  margin: 0px;
+  height: 82px;
 }
 
-.topnav li a {
-    display: inline-block;
-    white-space: nowrap;
-  }
+#imglogo {
+  /* border: 1px solid #707070; */
+}
 
-  #logo {
-    padding: 0px;
-    width: 443px;
-    height: 80px;
-    border-color: #707070;
-  }
-
-  #logoIMG {
-      position: absolute;
-      left: 0px;
-      top: 15px;
-  }
-
-  #fridge {
-      padding-top: 5px;
-      padding-bottom: 5px;
-      padding-left: 45px;
-      padding-right: 45px;
-      border: 1px solid black;
-      border-radius: 28px;
-      margin-left: 14px;
-      margin-right: 37px;
-      margin-top: 12px;
-      margin-bottom: 12px;
-      position: absolute;
-      left: 457px;
-      border-color: #707070;
-      
-  }
-
-  #recent {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border: 1px solid black;
-    border-radius: 40px;
-    margin-right: 37px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    position: absolute;
-    left: 743px;
-    border-color: #707070;
-  }
-
-  #about {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border: 1px solid black;
-    border-radius: 40px;
-    margin-right: 37px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    position: absolute;
-      left: 1019px;
-      border-color: #707070;
-  }
-
-  #search input {
-      width: 595px;
-      border: 1px solid black;
-      border-radius: 40px;
-      position: absolute;
-      left: 1249px;
-      border-color: #707070;
-      height: 56px;
-      top: 27px;
-      color: #707070;
-      text-align: center;
-      font-size: 20px;
-  }
-  hr.solid {
-    border-top: 1px solid #707070;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-top: 5px;
-  }
+nav a {
+  float: left;
+  color: #707070;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 34px;
   
+}
+
+.txt {
+  border: 1px solid #707070;
+  border-radius: 40px;
+  margin-top: 12px;
+}
+
+#Fridge{
+  margin-left: 14px;
+  padding: 5px 45px;
+}
+
+#Posts{
+  margin-left: 37px;
+  padding: 5px 25px;
+}
+
+#About {
+  margin-left: 37px;
+  padding: 5px 30px;
+}
+
+#SearchInput {
+  margin-left: 30px;
+  padding: 5px 22px;
+  color: #707070;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 34px;
+}
+
+.lineBreak {
+  border: 1px solid #707070;
+}
