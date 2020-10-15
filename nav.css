@@ -276,6 +276,7 @@ footer {
 
 #socialmedialinks span a:hover{
   cursor: pointer;
+  color: #707070;
 }
 
 #socialmedialinks span {
@@ -287,5 +288,4 @@ footer {
 #copyright {
   float: right;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
 }
