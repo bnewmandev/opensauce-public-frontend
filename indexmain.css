@@ -220,20 +220,18 @@ h1 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 main:after {
     content: "";
     display: table;
     clear: both;
 }
+
+main {
+    padding-bottom: 2.5rem;
+}
+
+footer {
+    position: absolute;
+    width: 1920px;
+    background-color: #3D3C3C;
+  }
