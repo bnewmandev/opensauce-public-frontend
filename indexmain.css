@@ -3,6 +3,10 @@ body {
 }
 
 
+#SearchInput:hover {
+    cursor: auto;
+}
+
 /* NAV SECTION */
 nav {
     box-sizing: border-box;
@@ -197,6 +201,10 @@ h1 {
     margin-left: 40px;
 }
 
+#browselinks a:hover {
+    cursor: pointer;
+}
+
 #signinbottomright {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 28px;
@@ -234,4 +242,39 @@ footer {
     position: absolute;
     width: 1920px;
     background-color: #3D3C3C;
-  }
+}
+
+#socialmedialinks {
+    width: 1620px;
+    margin-left: 150px;
+}
+
+#socialmedialinks img{
+    margin-left: 10px;
+}
+
+#socialmedialinks img:hover{
+    cursor: pointer;
+}
+
+#socialmedialinks span a{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+#socialmedialinks span a:hover{
+    cursor: pointer;
+}
+
+#socialmedialinks span {
+    color: #707070;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+#copyright {
+    float: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
