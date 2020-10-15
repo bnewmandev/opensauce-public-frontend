@@ -43,6 +43,7 @@ nav a {
 
 .txt:hover {
     cursor: pointer;
+    border-color: #B1D0F0;
 }
 
 #Fridge{
@@ -121,6 +122,7 @@ figure:hover {
   padding-bottom: 0px;
 }
 
+
 h1 {
   font-family: 'Franklin Gothic Medium';
   font-size: 40px;
@@ -177,14 +179,20 @@ h1 {
 }
 
 .row img {
+  border: 1px solid white;
   border-radius: 33px;
   white-space: nowrap;
 }
 
+.row img:hover {
+  border: 1px solid black;
+}
+
 .row figure {
-  margin: 13px;
+  margin: 10px;
   width: 267px;
   float: left;
+
 }
 
 .row figcaption {
@@ -203,6 +211,7 @@ h1 {
 
 #browselinks a:hover {
   cursor: pointer;
+  color: #707070;
 }
 
 #signinbottomright {
@@ -225,6 +234,8 @@ h1 {
 
 #signinbottomright a:hover {
   cursor: pointer;
+  color: black;
+  border-color: black;
 }
 
 
