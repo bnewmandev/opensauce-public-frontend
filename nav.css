@@ -1,0 +1,78 @@
+nav {
+  box-sizing: border-box;
+  width: 1920px;
+  border: 1px solid #707070;
+  z-index: 1;
+  margin: 0px;
+  height: 82px;
+}
+
+nav a {
+  float: left;
+  color: #707070;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 34px;
+  
+}
+
+.txt {
+  border: 1px solid #707070;
+  border-radius: 40px;
+  margin-top: 12px;
+}
+
+#Fridge{
+  margin-left: 14px;
+  padding: 5px 45px;
+}
+
+#Posts{
+  margin-left: 37px;
+  padding: 5px 25px;
+}
+
+#About {
+  margin-left: 37px;
+  padding: 5px 30px;
+}
+
+.parents1 {
+  position: relative;
+  margin-left: 30px;
+  width: 570px;
+}
+
+#SearchInput {
+  margin-left: 30px;
+  padding: 5px 22px;
+  color: #707070;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 34px;
+  width: 500px;
+}
+
+
+
+.lineBreak {
+  border: 1px solid #707070;
+}
+
+#submitSearch{
+  position: absolute;
+  top: 26px;
+  right: 10px;
+}
+
+#openMenu {
+  position: absolute;
+  top: 34px;
+  right: 50px;
+}
+
+#clickonPFP {
+  position: absolute;
+  top: 21px;
+  right: -75px;
+  border: 1px solid black;
+}

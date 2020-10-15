@@ -1,0 +1,280 @@
+body {
+    touch-action: none;
+}
+
+
+#SearchInput:hover {
+    cursor: auto;
+}
+
+/* NAV SECTION */
+nav {
+    box-sizing: border-box;
+    width: 1920px;
+    border: 1px solid #707070;
+    z-index: 1;
+    margin: 0px;
+    height: 82px;
+  }
+
+  #imglogo {
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+  }
+
+  #imglogo:hover {
+      cursor: pointer;
+  }
+  
+  nav a {
+    float: left;
+    color: #707070;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 34px;
+    
+  }
+  
+  .txt {
+    border: 1px solid #707070;
+    border-radius: 40px;
+    margin-top: 12px;
+  }
+  
+  .txt:hover {
+      cursor: pointer;
+  }
+
+  #Fridge{
+    margin-left: 14px;
+    padding: 5px 45px;
+  }
+  
+  #Posts{
+    margin-left: 37px;
+    padding: 5px 25px;
+  }
+  
+  #About {
+    margin-left: 37px;
+    padding: 5px 30px;
+  }
+  
+  .parents1 {
+    position: relative;
+    margin-left: 30px;
+    width: 570px;
+  }
+  
+  #SearchInput {
+    margin-left: 30px;
+    padding: 5px 22px;
+    color: #707070;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 34px;
+    width: 500px;
+  }
+  
+  
+  
+  .lineBreak {
+    border: 1px solid #707070;
+  }
+  
+  #submitSearch{
+    position: absolute;
+    top: 26px;
+    right: 10px;
+  }
+  
+  #openMenu {
+    position: absolute;
+    top: 34px;
+    right: 50px;
+  }
+  
+  #clickonPFP {
+    position: absolute;
+    top: 21px;
+    right: -75px;
+    border: 1px solid black;
+  }
+
+  /*  */
+
+#leftcolumn {
+    float: left;
+    width: 1182px;
+    margin-left: -283px;
+    margin-top: 0px;
+}
+
+figure:hover {
+    cursor: pointer;
+}
+
+#rightcolumn {
+    float: left;
+    width: auto;
+    text-align: left;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+#leftcolumn h1 {
+    width: 421px;
+}
+
+#leftcolumn button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-right: 40px;
+    background: none;
+    border: 3px solid white;
+    border-radius: 40px;
+    margin-top: 0px;
+}
+
+#leftcolumn button:hover {
+    cursor: pointer;
+    border: 3px solid #B1D0F0;
+    background-color: #B1D0F0;
+}
+
+#Pastries {
+    margin-right: 0px !important;
+}
+
+#welcometext p{
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 9px;
+    width: 395px;
+    height: 160px;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #707070;
+}
+
+.row {
+    position: relative;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    white-space: nowrap;
+
+}
+
+.row img {
+    border-radius: 33px;
+    white-space: nowrap;
+}
+
+.row figure {
+    margin: 13px;
+    width: 267px;
+    float: left;
+}
+
+.row figcaption {
+    text-align: center;
+    color: #707070;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#browselinks a {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 30px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+#browselinks a:hover {
+    cursor: pointer;
+}
+
+#signinbottomright {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    width: 374px;
+    margin-left: 9px;
+    color: black;
+}
+
+#signinbottomright a {
+    padding-left: 60px;
+    padding-right: 60px;
+    border: 1px solid #707070;
+    color: #707070;;
+    border-radius: 20px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+#signinbottomright a:hover {
+    cursor: pointer;
+}
+
+
+main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main {
+    padding-bottom: 2.5rem;
+}
+
+footer {
+    position: absolute;
+    width: 1920px;
+    background-color: #3D3C3C;
+}
+
+#socialmedialinks {
+    width: 1620px;
+    margin-left: 150px;
+}
+
+#socialmedialinks img{
+    margin-left: 10px;
+}
+
+#socialmedialinks img:hover{
+    cursor: pointer;
+}
+
+#socialmedialinks span a{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+#socialmedialinks span a:hover{
+    cursor: pointer;
+}
+
+#socialmedialinks span {
+    color: #707070;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+#copyright {
+    float: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
