@@ -43,8 +43,8 @@ nav a {
 }
 
 .txt:hover {
-    cursor: pointer;
-    border-color: #B1D0F0;
+  border-color: #B1D0F0;
+  cursor: pointer;
 }
 
 #Fridge{
@@ -151,9 +151,10 @@ h1 {
 }
 
 #leftcolumn button:hover {
-  cursor: pointer;
   border: 3px solid #B1D0F0;
   background-color: #FFFFFF;
+  cursor: pointer;
+
 }
 
 #Pastries {
@@ -211,8 +212,9 @@ h1 {
 }
 
 #browselinks a:hover {
-  cursor: pointer;
   color: #707070;
+  cursor: pointer;
+
 }
 
 #signinbottomright {
@@ -234,9 +236,10 @@ h1 {
 }
 
 #signinbottomright a:hover {
-  cursor: pointer;
   color: black;
   border-color: black;
+  cursor: pointer;
+
 }
 
 
@@ -276,8 +279,9 @@ footer {
 }
 
 #socialmedialinks span a:hover{
-  cursor: pointer;
   color: #707070;
+  cursor: pointer;
+
 }
 
 #socialmedialinks span {
