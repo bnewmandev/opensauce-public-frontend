@@ -5,39 +5,38 @@
     <head>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' charset="utf-8">
         <title>Open Sauce</title>
-        <link rel="stylesheet"  href="indexmain.css">
+        <link rel="stylesheet"  href="nav.css">
+        <script src="nav.js"></script>
     </head>
-
-    <body>
-        <header>
-            <nav>
-                <a class="active"><img id="imglogo" src="https://via.placeholder.com/433x80.png"></a>
-                <a id="Fridge" class="txt">The Fridge</a>
-                <a id="Posts" class="txt">Recent Posts</a>
-                <a id="About" class="txt">About Us</a>
-                <a>
-                    <div class="parents1">
-                        <input id="SearchInput" class="txt" type="text" placeholder="Search...">
-                        <input id="submitSearch" type="image" src="assets/SearchIcon.png" alt="search">
-                        <input id="openMenu" type="image" src="assets/TriangleMenuIcon.png" alt="menu">
-                        <input id="clickonPFP" type="image" src="assets/PFP.png" alt="menu">
-                    </div>
-                </a>
-                
-            </nav>
-        </header>
+        <body onload="OnLoad()">
+            <header>
+                <nav>
+                    <a class="active"><img id="imglogo" src="https://via.placeholder.com/433x80.png"></a>
+                    <a id="Fridge" class="txt">The Fridge</a>
+                    <a id="Posts" class="txt">Recent Posts</a>
+                    <a id="About" class="txt">About Us</a>
+                    <a>
+                        <div class="parents1">
+                            <input id="SearchInput" class="txt" type="text" placeholder="Search...">
+                            <input id="submitSearch" type="image" src="assets/SearchIcon.png" alt="search">
+                            <input id="openMenu" type="image" src="assets/TriangleMenuIcon.png" alt="menu">
+                            <input id="clickonPFP" type="image" src="assets/PFP.png" alt="menu">
+                        </div>
+                    </a>
+                </nav>
+            </header>
         <main>
             <div id="leftcolumn">
                 <h1>Featured Recipies</h1>
-                <button id="Snacks" type="button">Snacks</button>
-                <button id="Breakfast" type="button">Breakfast</button>
-                <button id="Lunch" type="button">Lunch</button>
-                <button id="Dinner" type="button">Dinner</button>
-                <button id="Sides" type="button">Sides</button>
-                <button id="Deserts" type="button">Deserts</button>
-                <button id="Soups" type="button">Soups</button>
-                <button id="Bread" type="button">Bread</button>
-                <button id="Pastries" type="button">Pastries</button>
+                <button onclick="NavButton(this.id)" id="Snacks" type="button">Snacks</button>
+                <button onclick="NavButton(this.id)" id="Breakfast" type="button">Breakfast</button>
+                <button onclick="NavButton(this.id)" id="Lunch" type="button">Lunch</button>
+                <button onclick="NavButton(this.id)" id="Dinner" type="button">Dinner</button>
+                <button onclick="NavButton(this.id)" id="Sides" type="button">Sides</button>
+                <button onclick="NavButton(this.id)" id="Deserts" type="button">Deserts</button>
+                <button onclick="NavButton(this.id)" id="Soups" type="button">Soups</button>
+                <button onclick="NavButton(this.id)" id="Bread" type="button">Bread</button>
+                <button onclick="NavButton(this.id)" id="Pastries" type="button">Pastries</button>
                         <div class="row">
                             <figure>
                                 <img src="https://via.placeholder.com/267x189.png">
@@ -128,8 +127,6 @@
                 <span><a>Content Policy</a></span>
                 <span id="copyright">© Open Sauce, 2020.</span>
                 <br><br>
-                
-                
             </div>
         </footer>
     </body>
