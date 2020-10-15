@@ -276,6 +276,7 @@ footer {
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 25px;
+  text-decoration: none;
 }
 
 #socialmedialinks span a:hover{
