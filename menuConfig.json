@@ -1,0 +1,11 @@
+{
+    "DEBUG":
+    {
+       "test":"testing123" 
+    },
+    "Snacks":
+    { 
+        "captions":["TEST","TEST2"],
+        "links":["example.com","example.com","example.com","example.com","example.com","example.com","example.com","example.com","example.com","example.com","example.com"]
+    }
+}
