@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    border: solid 1px #707070;
+}
+
+nav a {
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 46px;
+    vertical-align: top;
+    color: #707070;
+}
+
+a.active {
+    margin: 0;
+    padding: 0;
+}
+
+.txt {
+
+}
+
+
+
+
+
+
+
+
+.parents1 {
+    display: inline-block;
+}

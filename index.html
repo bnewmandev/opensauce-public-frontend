@@ -5,12 +5,9 @@
     <head>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' charset="utf-8">
         <title>OpenSauce - Comment, Share and Read</title>
-        <link rel="stylesheet" type="text/css" href="nav.css">
-        <link rel="stylesheet" type="text/css" href="node_modules\fullpage.js\dist\fullpage.css">
+        <link rel="stylesheet" type="text/css" href="navbar.css">
         <script async defer data-website-id="7efe4fd5-8b89-4031-a391-0538889d1fb8" src="https://umami.opensauce.uk/umami.js"></script>
-        <script src="https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="fullpage.js"></script>
 
         <!-- Meta tags -->
         <meta name="title" content="OpenSauce - Comment, Share and Read ">
@@ -28,7 +25,7 @@
         <meta property="twitter:title" content="OpenSauce - Comment, Share and Read ">
         <meta property="twitter:description" content="OpenSauce aims to provide an easy way of sharing your recipes and allow your audience to be able to read your recipes with ease and efficiency.">
     </head>
-        <body onload="OnLoad()">
+        <body>
             <header>
                 <nav>
                     <a class="active"><img id="imglogo" src="https://via.placeholder.com/433x80.png"></a>
@@ -37,7 +34,7 @@
                     <a id="About" class="txt">About Us</a>
                     <a>
                         <div class="parents1">
-                            <input id="SearchInput" class="txt" type="text" placeholder="Search...">
+                            <input id="SearchInput" class="txtSearch" type="text" placeholder="Search...">
                             <input id="submitSearch" type="image" src="assets/SearchIcon.png" alt="search">
                             <input id="openMenu" type="image" src="assets/TriangleMenuIcon.png" alt="menu">
                             <input id="clickonPFP" type="image" src="assets/PFP.png" alt="menu">
@@ -57,84 +54,56 @@
                 <button onclick="NavButton(this.id)" id="Soups" type="button">Soups</button>
                 <button onclick="NavButton(this.id)" id="Bread" type="button">Bread</button>
                 <button onclick="NavButton(this.id)" id="Pastries" type="button">Pastries</button>
-                        <div class="row">
-                            <a id="Feat-1-L">
-                            <figure>
-                                    <img id="Feat-1" src="https://via.placeholder.com/267x189.png">
-                                <figcaption id="Feat-1-C">Placeholder</figcaption>
-                            </figure>
-                            </a>
-                            <a id="Feat-2-L">
-                            <figure>
-                                <img id="Feat-2" src="https://via.placeholder.com/267x189.png">
-                                <figcaption id="Feat-2-C">Placeholder</figcaption>
-                            </figure>
-                            </a>
-                            <a id="Feat-3-L">
-                            <figure>
-                                <img id="Feat-3" src="https://via.placeholder.com/267x189.png">
-                                <figcaption id="Feat-3-C">Placeholder</figcaption>
-                            </figure>
-                            </a>
-                            <a id="Feat-4-L">
-                            <figure>
-                                <img id="Feat-4" src="https://via.placeholder.com/267x189.png">
-                                <figcaption id="Feat-4-C">Placeholder</figcaption>
-                            </figure>
-                            </a>
-                        </div>
-                        <div class="row">
-                            <a id="Feat-5-L">
-                            <figure>
-                                <img id="Feat-5" src="https://via.placeholder.com/267x189.png">
-                                <figcaption id="Feat-5-C">Placeholder</figcaption>
-                            </figure>
-                            </a>
-                            <a id="Feat-6-L">
-                            <figure>
-                                <img id="Feat-6" src="https://via.placeholder.com/267x189.png">
-                                <figcaption id="Feat-6-C">Placeholder</figcaption>
-                            </figure>
-                            </a>
-                            <a id="Feat-7-L">
-                            <figure>
-                                <img id="Feat-7" src="https://via.placeholder.com/267x189.png">
-                                <figcaption id="Feat-7-C">Placeholder</figcaption>
-                            </figure>
-                            </a>
-                            <a id="Feat-8-L">
-                            <figure>
-                                <img id="Feat-8" src="https://via.placeholder.com/267x189.png">
-                                <figcaption id="Feat-8-C">Placeholder</figcaption>
-                            </figure>
-                            </a>
-                        </div>
-                        <div class="row">
-                            <a id="Feat-9-L">
-                            <figure>
-                                <img id="Feat-9" src="https://via.placeholder.com/267x189.png">
-                                <figcaption id="Feat-9-C">Placeholder</figcaption>
-                            </figure>
-                            </a>
-                            <a id="Feat-10-L">
-                            <figure>
-                                <img id="Feat-10" src="https://via.placeholder.com/267x189.png">
-                                <figcaption id="Feat-10-C">Placeholder</figcaption>
-                            </figure>
-                            </a>
-                            <a id="Feat-11-L">
-                            <figure>
-                                <img id="Feat-11" src="https://via.placeholder.com/267x189.png">
-                                <figcaption id="Feat-11-C">Placeholder</figcaption>
-                            </figure>
-                            </a>
-                            <a id="Feat-12-L">
-                            <figure>
-                                <img id="Feat-12" src="https://via.placeholder.com/267x189.png">
-                                <figcaption id="Feat-12-C">Placeholder</figcaption>
-                            </figure>
-                            </a>
-                        </div>
+                <div id="MainpageImages" onload="ChangeImage('Snacks')">
+                    <figure id="Image01">
+                        <img>
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure id="Image02">
+                        <img>
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure id="Image03">
+                        <img>
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure id="Image04">
+                        <img>
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure id="Image05">
+                        <img>
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure id="Image06">
+                        <img>
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure id="Image07">
+                        <img>
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure id="Image08">
+                        <img>
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure id="Image09">
+                        <img>
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure id="Image10">
+                        <img>
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure id="Image11">
+                        <img>
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure id="Image12">
+                        <img>
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
             </div>
             <div id="rightcolumn">
                 <h1>Welcome to Open Sauce</h1>
