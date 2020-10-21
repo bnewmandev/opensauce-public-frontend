@@ -2,7 +2,20 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="homepageNavbar.css">
+        <link rel="stylesheet" type="text/css" href="homepageScroll.css">
         <title>Open Sauce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script
+			  src="https://code.jquery.com/jquery-3.5.1.js"
+			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+              crossorigin="anonymous">
+        </script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Sly/1.6.1/sly.js"
+            integrity="sha512-b2ghMvZdJZJXx/mrgZt2fAB4e8Qh2mM0QQZ3JiBD9TVg1rMb3SrSUtaXMuZed51LQaykJglxcNaTP3lqvGJHeg=="
+            crossorigin="anonymous">
+        </script>
+        <script src="homepageScroll.js"></script>
     </head>
     <body>
         <header>
@@ -13,5 +26,15 @@
                 <a id="navbarProfile"><img src="https://via.placeholder.com/130x130.png"></a>
             </nav>
         </header>
+        <main>
+            <div class="ScrollerWrapper">
+                <div id="recentPosts">
+                    <p>Recent Posts</p>
+                    <div id="recentPostsJS" class="Scroller">
+                        <img class="ScrollerGeneralImage" src="https://via.placeholder.com/224x133.png">
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
