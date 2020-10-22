@@ -1,11 +1,12 @@
-$.getJSON("test.json", function(json) {
-    console.log(json);
-    RecentPostsSRCs(json);
+function Scroller()
+{
+    $.getJSON("test.json", function(json) {
+        console.log(json);
+        RecentPostsSRCs(json);
+    });
+}
 
 
-
-
-});
 
 
 // document.getElementById("recentPostsJS").appendChild(elem);
