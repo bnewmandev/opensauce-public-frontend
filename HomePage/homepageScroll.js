@@ -69,7 +69,8 @@ $.getJSON('homepageData.json', function(data)
         var nodeI = document.createElement("img");
         nodeI.src = imgLink;
         nodeI.alt = altText;
-        nodeI.style = "margin-right: 2.55%;";
+        nodeI.style = "margin-right: 2.55%; margin-top: 27px;";
+        //nodeI.style = "margin-top: 27px;";
 
         nodeA.appendChild(nodeI);
         document.getElementById(menuID).appendChild(nodeA);
