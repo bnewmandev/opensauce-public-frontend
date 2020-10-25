@@ -64,13 +64,11 @@ $.getJSON('homepageData.json', function(data)
         // console.log("Append Link Function Called")
         var nodeA = document.createElement("a");
         nodeA.href = pageLink;
-        nodeA.className = "ScrollerImageGeneral";
+        nodeA.className = "ScrollerGeneralImage";
 
         var nodeI = document.createElement("img");
         nodeI.src = imgLink;
         nodeI.alt = altText;
-        nodeI.style = "margin-right: 2.55%; margin-top: 27px;";
-        //nodeI.style = "margin-top: 27px;";
 
         nodeA.appendChild(nodeI);
         document.getElementById(menuID).appendChild(nodeA);
