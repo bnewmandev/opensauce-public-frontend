@@ -72,6 +72,8 @@ $.getJSON('homepageData.json', function(data)
 
         nodeA.appendChild(nodeI);
         document.getElementById(menuID).appendChild(nodeA);
+
+        console.log(nodeA);
     }
     console.log("Loaded JS File");
     UpdateMenu("recent");
