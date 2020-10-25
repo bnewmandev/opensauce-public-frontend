@@ -79,4 +79,3 @@ $.getJSON('homepageData.json', function(data)
     UpdateMenu("authors");
 
 });
-
