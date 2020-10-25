@@ -9,7 +9,8 @@
         <script async defer data-website-id="7efe4fd5-8b89-4031-a391-0538889d1fb8" src="https://umami.opensauce.uk/umami.js"></script>
         <script src="nav.js"></script>
         <script src="indexMenuSelectorLIB.js"></script>
-
+        <script> if (!window.location.href.startsWith('file://')) {
+        document.write('<script async defer data-website-id="044ffd0f-b36f-46d4-8b2a-966adeb5d5d1" src="https://umami.opensauce.uk/umami.js"></sc' + 'ript>') } </script> <!-- Only load this on production rather locally, avoid using write as it hangs up! -->
         <!-- Meta tags -->
         <meta name="title" content="OpenSauce - Comment, Share and Read ">
         <meta name="description" content="OpenSauce aims to provide an easy way of sharing your recipes and allow your audience to be able to read your recipes with ease and efficiency.">
