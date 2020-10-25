@@ -13,3 +13,6 @@
 
 # Windows shortcuts
 *.lnk
+
+# Node
+node_modules/
