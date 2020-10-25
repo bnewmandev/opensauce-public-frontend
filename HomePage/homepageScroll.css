@@ -15,6 +15,7 @@
 }
 
 .Scroller {
+	padding-top: 27px;
 	position: relative;
 	display: inline-block;
 	left: 3px;
@@ -29,7 +30,7 @@
 }
 
 .ScrollerGeneralImage img {
-	margin-top: 27px;
+	/* margin-top: 27px; */
 	margin-right: 2.55%;
 	margin-left: 2.55%;
 }
