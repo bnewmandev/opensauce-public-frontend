@@ -1,0 +1,52 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    box-sizing: border-box;
+    border: solid 1px #707070;
+    /* padding-bottom: 20px; */
+    height: auto;
+    overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+
+#navbarLogo {
+    margin-left: 1.9%;
+    margin-top: 20px;
+    display: inline-block;
+    position: relative;
+    bottom: 10px
+}
+
+.NavbarText {
+    display: inline-block;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: left;
+    vertical-align: top;
+    color: #707070;
+    top: 48px;
+}
+
+#navbarLogin {
+    margin-right: 31.4%;
+    margin-left: 3%;
+}
+
+#navbarSearch {
+    width: 27.1%;
+    border: solid 1px #707070;
+}
+
+#navbarProfile img {
+    display: inline-block;
+    margin-left: 3.3%;
+    margin-top: 10px;
+    border-radius: 100%;
+}
