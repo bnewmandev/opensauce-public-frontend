@@ -9,6 +9,9 @@ header {
     border: solid 1px #707070;
     /* padding-bottom: 20px; */
     height: auto;
+    overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
 }
 
 
