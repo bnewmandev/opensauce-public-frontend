@@ -16,9 +16,9 @@
 
 .Scroller {
 
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 22px;
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+	padding-top: 22px !important;
 	/* position: relative; */
 	display: inline-block;
 	height: 186px;
