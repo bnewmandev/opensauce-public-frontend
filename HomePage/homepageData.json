@@ -1,0 +1,20 @@
+{
+    "Recent": 
+    {
+        "pageLinks": ["http://example.com", "http://example.com", "http://example.com", "http://example.com", "http://example.com", "http://example.com", "http://example.com", "http://example.com", "http://example.com", "http://example.com", "http://example.com"],
+        "imgLinks": ["https://via.placeholder.com/224x133.png", "https://via.placeholder.com/224x133.png", "https://via.placeholder.com/224x133.png", "https://via.placeholder.com/224x133.png", "https://via.placeholder.com/224x133.png", "https://via.placeholder.com/224x133.png", "https://via.placeholder.com/224x133.png", "https://via.placeholder.com/224x133.png", "https://via.placeholder.com/224x133.png", "https://via.placeholder.com/224x133.png", "https://via.placeholder.com/224x133.png", ],
+        "altTexts": ["YEET", "YEET", "YEET", "YEET", "YEET", "YEET", "YEET", "YEET", "YEET", "YEET", "YEET"]
+    },
+    "Ingredients": 
+    {
+        "pageLinks": [],
+        "imgLinks": [],
+        "altTexts": []
+    },
+    "Authors": 
+    {
+        "pageLinks": [],
+        "imgLinks": [],
+        "altTexts": []
+    }
+}

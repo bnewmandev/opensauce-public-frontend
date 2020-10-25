@@ -11,16 +11,11 @@
 			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
               crossorigin="anonymous">
         </script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/Sly/1.6.1/sly.js"
-            integrity="sha512-b2ghMvZdJZJXx/mrgZt2fAB4e8Qh2mM0QQZ3JiBD9TVg1rMb3SrSUtaXMuZed51LQaykJglxcNaTP3lqvGJHeg=="
-            crossorigin="anonymous">
-	</script>
 	 <script> if (!window.location.href.startsWith('file://')) {
         document.write('<script async defer data-website-id="044ffd0f-b36f-46d4-8b2a-966adeb5d5d1" src="https://umami.opensauce.uk/umami.js"></sc' + 'ript>') } </script> <!-- Only load this on production rather locally, avoid using write as it hangs up! -->
         <script src="homepageScroll.js"></script>
     </head>
-    <body onload="Scroller()">
+    <body>
         <header>
             <nav>
                 <a id="navbarLogo"><img src="https://via.placeholder.com/227x109.png"></a>
@@ -34,18 +29,18 @@
                 <div id="recentPosts">
                     <p>Recent Posts</p>
                     <div id="recentPostsJS" class="Scroller">
-                        <img class="ScrollerGeneralImage" src="https://via.placeholder.com/224x133.png">
+                        <a class="ScrollerGeneralImage"><img src="https://via.placeholder.com/224x133.png"></a>
                     </div>
                 </div>
                 <div id="ingredients">
                     <p>Ingredients</p>
-                    <div id="IngredientsJS" class="Scroller">
+                    <div id="ingredientsJS" class="Scroller">
 
                     </div>
                 </div>
                 <div id="authors">
                     <p>Authors</p>
-                    <div id="AuthorsJS" class="Scroller">
+                    <div id="authorsJS" class="Scroller">
 
                     </div>
                 </div>
