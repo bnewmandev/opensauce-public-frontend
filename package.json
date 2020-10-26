@@ -11,5 +11,8 @@
   "bugs": {
     "url": "https://github.com/opensauce-uk/website/issues"
   },
-  "homepage": "https://github.com/opensauce-uk/website#readme"
+  "homepage": "https://github.com/opensauce-uk/website#readme",
+  "dependencies": {
+    "nodemailer": "^6.4.14"
+  }
 }
