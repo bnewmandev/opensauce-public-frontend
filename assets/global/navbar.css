@@ -18,9 +18,9 @@ header {
 #navbar-logo {
     margin-left: 1.9%;
     margin-top: 20px;
-    display: inline-block;
+    display: inline-flex;
     position: relative;
-    bottom: 10px
+    bottom: 10px;
 }
 
 .navbar-text {
