@@ -4,21 +4,24 @@
         <p>Debug v11</p>
     <?php
 
-        echo $_POST["g-recaptcha-response"];
+        if ($_POST["g-recaptcha-response"] == null) {
+            header("Location: errorpages/401.html");
+            exit;
+        }
 
 
         if (!isset($_POST["p6"]) || $_POST["p6"] != "botcheck") {  
-            header("Location: contact.html");
+            header("Location: errorpages/400.html");
             exit;  
         }
 
         if ("POST" != getenv("REQUEST_METHOD")) {  
-            header("Location: contact.html");
+            header("Location: errorpages/400.html");
             exit;  
         }
 
         if ("" == getenv("HTTP_USER_AGENT") || "" == getenv("HTTP_REFERER")) {
-            header("Location: contact.html");
+            header("Location: errorpages/400.html");
             exit;  
         }
 
