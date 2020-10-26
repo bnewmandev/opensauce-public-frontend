@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <p>Debug v8</p>
+        <p>Debug v9</p>
     <?php
 
         echo $_POST["p1"];
 
+        /*
         $firstName = $_POST["p1"];
         $lastName = $_POST["p2"];
         $emailAddress = $_POST["p3"];
@@ -20,10 +21,11 @@
 
         mail("teams@opensauce.uk", "Message from opensauce", $messageSend);
 
-        echo "Debug v8" <br>
+        echo "Debug v9" <br>
 
         echo "The Following message has been sent:\n";
         print $messageSend;
+        */
 
     ?>
     </body>
