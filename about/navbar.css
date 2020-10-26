@@ -15,7 +15,7 @@ header {
 }
 
 
-#navbarLogo {
+#navbar-logo {
     margin-left: 1.9%;
     margin-top: 20px;
     display: inline-block;
@@ -23,7 +23,7 @@ header {
     bottom: 10px
 }
 
-.NavbarText {
+.navbar-text {
     display: inline-block;
     position: relative;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -34,17 +34,17 @@ header {
     top: 48px;
 }
 
-#navbarLogin {
+#navbar-login {
     margin-right: 31.4%;
     margin-left: 3%;
 }
 
-#navbarSearch {
+#navbar-search {
     width: 27.1%;
     border: solid 1px #707070;
 }
 
-#navbarProfile img {
+#navbar-profile img {
     display: inline-block;
     margin-left: 3.3%;
     margin-top: 10px;

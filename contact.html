@@ -2,16 +2,19 @@
 <html>
     <head>
         <title>Contact Us</title>
-        <link rel="stylesheet" type="text/css" href="contactNavbar.css">
-        <link rel="stylesheet" type="text/css" href="body.css">
+        <link rel="stylesheet" type="text/css" href="contact/navbar.css">
+        <link rel="stylesheet" type="text/css" href="contact/body.css">
+        <script> 
+        if (!window.location.href.startsWith('file://')) { document.write('<script async defer data-website-id="044ffd0f-b36f-46d4-8b2a-966adeb5d5d1" src="https://umami.opensauce.uk/umami.js"></sc' + 'ript>') }
+        </script>
     </head>
     <body>
         <header>
             <nav>
-                <a href="homepage.html" id="navbarLogo"><img src="https://via.placeholder.com/227x109.png"></a>
-                <a class="NavbarText" id="navbarLogin">Login/Sign Up</a>
-                <input class="NavbarText" id="navbarSearch" class="txt" type="text" placeholder="Search...">
-                <a id="navbarProfile"><img src="https://via.placeholder.com/130x130.png"></a>
+                <a href="home.html" id="navbar-logo"><img src="https://via.placeholder.com/227x109.png"></a>
+                <a class="navbar-text" id="navbar-login">Login/Sign Up</a>
+                <input class="navbar-text" id="navbar-search" class="txt" type="text" placeholder="Search...">
+                <a id="navbar-profile"><img src="https://via.placeholder.com/130x130.png"></a>
             </nav>
         </header>
         <main>
@@ -21,23 +24,23 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas dui mollis ligula placerat aliquet. Donec porta, orci lobortis ultrices placerat, elit magna dignissim felis, ut placerat urna ipsum sodales tellus. </p>
             </div>
             <div id="right">
-                <div class="inputContainer">
+                <div class="input-container">
                     <p>First Name</p>
                     <input type="text">
                 </div>
-                <div class="inputContainer">
+                <div class="input-container">
                     <p>Last Name</p>
                     <input type="text">
                 </div>
-                <div class="inputContainerFull">
+                <div class="input-container-full">
                     <p>Email Address</p>
                     <input type="email">
                 </div>
-                <div class="inputContainerFull">
+                <div class="input-container-full">
                     <p>Reason for Contact</p>
                     <input type="text">
                 </div>
-                <div id="multilineInput">
+                <div id="multiline-input">
                     <p>Message</p>
                     <textarea id="mullinin" name="mulinin"></textarea>
                 </div>

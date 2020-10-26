@@ -1,10 +1,10 @@
-$.getJSON('homepageData.json', function(data)
+$.getJSON('data.json', function(data)
 {
     function SetMenu(menu)
     {
         const recentPostsDict = 
         {
-            menuID: "recentPostsJS",
+            menuID: "recent-posts-js",
             pageLinks: data.Recent.pageLinks,
             imgLinks: data.Recent.imgLinks,
             altTexts: data.Recent.altTexts
@@ -12,7 +12,7 @@ $.getJSON('homepageData.json', function(data)
 
         const ingredientsDict = 
         {
-            menuID: "ingredientsJS",
+            menuID: "ingredients-js",
             pageLinks: data.Ingredients.pageLinks,
             imgLinks: data.Ingredients.imgLinks,
             altTexts: data.Ingredients.altTexts
@@ -20,7 +20,7 @@ $.getJSON('homepageData.json', function(data)
 
         const authorsDict = 
         {
-            menuID: "authorsJS",
+            menuID: "authors-js",
             pageLinks: data.Authors.pageLinks,
             imgLinks: data.Authors.imgLinks,
             altTexts: data.Authors.altTexts
@@ -64,7 +64,7 @@ $.getJSON('homepageData.json', function(data)
         // console.log("Append Link Function Called")
         var nodeA = document.createElement("a");
         nodeA.href = pageLink;
-        nodeA.className = "ScrollerGeneralImage";
+        nodeA.className = "scroller-general-image";
 
         var nodeI = document.createElement("img");
         nodeI.src = imgLink;

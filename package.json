@@ -1,0 +1,15 @@
+{
+  "name": "opensauce-website",
+  "version": "1.0.0",
+  "description": "Website for OpenSauce",
+  "main": "home.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opensauce-uk/website.git"
+  },
+  "author": "OpenSauce Team",
+  "bugs": {
+    "url": "https://github.com/opensauce-uk/website/issues"
+  },
+  "homepage": "https://github.com/opensauce-uk/website#readme"
+}

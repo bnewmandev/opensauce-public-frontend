@@ -1,6 +1,6 @@
 function GetData() 
 {
-    $.getJSON('aboutData.json', function(data) 
+    $.getJSON('data.json', function(data) 
     {
         console.log(data);
         document.getElementById("caption").textContent=data.ImageCaption;
