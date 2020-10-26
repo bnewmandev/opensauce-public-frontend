@@ -4,6 +4,12 @@
         <p>Debug v11</p>
     <?php
 
+
+        if (!isset($_POST["p6"]) || $_POST["p6"] != "botcheck") {  
+            header("Location: ./contact.html");
+            exit;  
+        }
+
         echo $_POST["p1"];
 
         
@@ -15,7 +21,7 @@
 
         $messageSend = "Name: {$firstName} {$lastName}\n
                         Email address: {$emailAddress}\n
-                        Reason for contact {$reason}\n
+                        Reason for contact: {$reason}\n
                         Message Content:\n\n{$messageRaw}";
         
         
