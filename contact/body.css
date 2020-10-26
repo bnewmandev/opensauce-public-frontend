@@ -80,6 +80,7 @@ textarea {
     resize: vertical;
     border: 1px solid #707070;
     width: 96%;
+    margin-bottom: 10px;
 }
 
 form {

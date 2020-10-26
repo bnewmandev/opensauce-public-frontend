@@ -5,9 +5,8 @@
         <link rel="stylesheet" type="text/css" href="assets/global/navbar.css">
         <link rel="stylesheet" type="text/css" href="contact/body.css">
         <link rel="stylesheet" type="text/css" href="assets/global/footer.css">
-        <script> 
-        if (!window.location.href.startsWith('file://')) { document.write('<script async defer data-website-id="044ffd0f-b36f-46d4-8b2a-966adeb5d5d1" src="https://umami.opensauce.uk/umami.js"></sc' + 'ript>') }
-        </script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     </head>
     <body>
         <header>
@@ -26,7 +25,7 @@
             </div>
             <form action="send-mail.php" method="POST">
                 <div id="right">
-                    <div class="input-container">
+                    <div class="input-container" >
                         <p>First Name</p>
                         <input name="p1" id="first-name" type="text">
                     </div>
@@ -47,7 +46,9 @@
                         <textarea name="p5" id="message-body" name="mulinin"></textarea>
                     </div>
                     <input name="p6" type="hidden" value="botcheck">
-                    <input id="submit-button" type="submit">
+                    <input name="email" style="display:none;" type="text">
+                    <div class="g-recaptcha" data-sitekey="6LdWntsZAAAAAMYm7V9dCRP5UffUmIPj9xhRhm8R"></div>
+                    <input id="submit-button" value="Submit" type="submit">
                 </div>
             </form>
         </main>
