@@ -24,30 +24,33 @@
                 <img src="https://via.placeholder.com/601x382.png">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas dui mollis ligula placerat aliquet. Donec porta, orci lobortis ultrices placerat, elit magna dignissim felis, ut placerat urna ipsum sodales tellus. </p>
             </div>
-            <form>
+            <form action="/content-policy/email.php" method="POST">
                 <div id="right">
                     <div class="input-container">
                         <p>First Name</p>
-                        <input id="first-name" type="text">
+                        <input name="p1" id="first-name" type="text">
                     </div>
                     <div class="input-container">
                         <p>Last Name</p>
-                        <input id="last-name" type="text">
+                        <input name="p2" id="last-name" type="text">
                     </div>
                     <div class="input-container-full">
                         <p>Email Address</p>
-                        <input id="email" type="email">
+                        <input name="p3" id="email" type="email">
                     </div>
                     <div class="input-container-full">
                         <p>Reason for Contact</p>
-                        <input id="message-header" type="text">
+                        <input name="p4" id="message-header" type="text">
                     </div>
                     <div id="multiline-input">
                         <p>Message</p>
-                        <textarea id="message-body" name="mulinin"></textarea>
+                        <textarea name="p5" id="message-body" name="mulinin"></textarea>
                     </div>
                     <input id="submit-button" value="Send" type="submit">
+
                 </div>
+                <input name="p6" type="hidden" value="SpamProt">
+
             </form>
         </main>
         <footer>
