@@ -1,52 +1,75 @@
 * {
-    border: 0;
     margin: 0;
     padding: 0;
 }
 
-header {
-    box-sizing: border-box;
-    border: solid 1px #707070;
-    /* padding-bottom: 20px; */
-    height: auto;
-    overflow-x: auto;
-	overflow-y: hidden;
-	white-space: nowrap;
+body {
+    background-color: wheat;
 }
 
+nav {
+    
+    width: 84.375%; /* 1620 / 1920 */
+    margin: 0 auto;
+    border: 3px solid #FF00FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 103px;
+    flex-wrap: nowrap;
+}
 
 #navbar-logo {
-    margin-left: 1.9%;
-    margin-top: 20px;
-    display: inline-flex;
-    position: relative;
-    bottom: 10px;
-}
-
-.navbar-text {
-    display: inline-block;
-    position: relative;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
-    text-align: left;
-    vertical-align: top;
-    color: #707070;
-    top: 48px;
+    text-decoration: none;
+    text-emphasis: none;
+    margin-right: 4.3209876543209874%; /* 70 / 1620 */
 }
 
 #navbar-login {
-    margin-right: 31.4%;
-    margin-left: 3%;
+    display: flex;
+    background-color: #9be9a3;
+    width: 14.012345679012345%; /* 227 / 1620 */ 
+    height: 87px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-right: 24.259259259259258%; /* 393 / 1620 */
+}
+
+#navbar-login a {
+    overflow: hidden;
+    display: block;
+    font-family: 'Salsa', cursive;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    color: #136a12;
+    font-size: 24px; 
 }
 
 #navbar-search {
-    width: 27.1%;
-    border: solid 1px #707070;
+    width: 33.024691358024694%; /* 535 / 1620 */ 
+    height: 80px;
+    border-radius: 40px;
+    border: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+#navbar-search img {
+    margin-left: 4.5%;
+}
+
+#navbar-search input {
+    margin-left: 4.1%;
+    width: 75%;
+    font-family: 'Salsa', cursive;
+    color: #136a12;
+    border: none;
+    font-size: 24px;
 }
 
 #navbar-profile img {
-    display: inline-block;
-    margin-left: 3.3%;
-    margin-top: 10px;
     border-radius: 100%;
 }
