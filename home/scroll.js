@@ -1,4 +1,4 @@
-$.getJSON('data.json', function(data)
+$.getJSON('home/data.json', function(data)
 {
     function SetMenu(menu)
     {
