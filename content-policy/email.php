@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
     <body>
-        <p>Debug v6</p>
+        <p>Debug v7</p>
     <?php
 
         echo $_GET["p1"];
@@ -19,7 +20,7 @@
 
         mail("teams@opensauce.uk", "Message from opensauce", $messageSend);
 
-        echo "Debug v6" <br>
+        echo "Debug v7" <br>
 
         echo "The Following message has been sent:\n";
         print $messageSend;
