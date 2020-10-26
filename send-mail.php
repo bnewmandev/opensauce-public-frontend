@@ -5,8 +5,6 @@
     <?php
 
         echo $_POST["p1"];
-
-        
         $firstName = $_POST["p1"];
         $lastName = $_POST["p2"];
         $emailAddress = $_POST["p3"];
@@ -20,14 +18,13 @@
         
         
 
-        mail("teams@opensauce.uk", "Message from opensauce", $messageSend);
+        mail("teams@opensauce.uk", "Contact Page", $messageSend);
 
         echo "Debug v11";
 
         echo "The Following message has been sent:\n";
         print $messageSend;
         
-
     ?>
     </body>
 </html>
