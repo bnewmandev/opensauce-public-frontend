@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <body>
+
     <?php
 
         $firstName = $_GET["p1"];
@@ -21,5 +19,3 @@
         print $messageSend;
 
     ?>
-    </body>
-</html> 
