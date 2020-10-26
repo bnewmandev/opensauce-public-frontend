@@ -4,6 +4,7 @@
         <title>Contact Us</title>
         <link rel="stylesheet" type="text/css" href="assets/global/navbar.css">
         <link rel="stylesheet" type="text/css" href="contact/body.css">
+        <link rel="stylesheet" type="text/css" href="assets/global/footer.css">
         <script> 
         if (!window.location.href.startsWith('file://')) { document.write('<script async defer data-website-id="044ffd0f-b36f-46d4-8b2a-966adeb5d5d1" src="https://umami.opensauce.uk/umami.js"></sc' + 'ript>') }
         </script>
@@ -23,28 +24,39 @@
                 <img src="https://via.placeholder.com/601x382.png">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas dui mollis ligula placerat aliquet. Donec porta, orci lobortis ultrices placerat, elit magna dignissim felis, ut placerat urna ipsum sodales tellus. </p>
             </div>
-            <div id="right">
-                <div class="input-container">
-                    <p>First Name</p>
-                    <input type="text">
+            <form>
+                <div id="right">
+                    <div class="input-container">
+                        <p>First Name</p>
+                        <input id="first-name" type="text">
+                    </div>
+                    <div class="input-container">
+                        <p>Last Name</p>
+                        <input id="last-name" type="text">
+                    </div>
+                    <div class="input-container-full">
+                        <p>Email Address</p>
+                        <input id="email" type="email">
+                    </div>
+                    <div class="input-container-full">
+                        <p>Reason for Contact</p>
+                        <input id="message-header" type="text">
+                    </div>
+                    <div id="multiline-input">
+                        <p>Message</p>
+                        <textarea id="message-body" name="mulinin"></textarea>
+                    </div>
+                    <input id="submit-button" value="Send" type="submit">
                 </div>
-                <div class="input-container">
-                    <p>Last Name</p>
-                    <input type="text">
-                </div>
-                <div class="input-container-full">
-                    <p>Email Address</p>
-                    <input type="email">
-                </div>
-                <div class="input-container-full">
-                    <p>Reason for Contact</p>
-                    <input type="text">
-                </div>
-                <div id="multiline-input">
-                    <p>Message</p>
-                    <textarea id="mullinin" name="mulinin"></textarea>
-                </div>
-            </div>
+            </form>
         </main>
+        <footer>
+            <p>OpenSauce</p>
+            <div id="footer-links">
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="legal/privacy.html">Privacy Policy</a>
+            </div>
+        </footer>
     </body>
 </html>
