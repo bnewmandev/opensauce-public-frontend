@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <p>Debug v11</p>
+        <p>Sent</p>
     <?php
 
         if ($_POST["g-recaptcha-response"] == null) {
@@ -47,10 +47,10 @@
 
         mail("teams@opensauce.uk", "Contact Page", $messageSend);
 
-        echo "Debug v11";
+        // echo "Debug v11";
 
-        echo "The Following message has been sent:\n";
-        print $messageSend;
+        // echo "The Following message has been sent:\n";
+        // print $messageSend;
         
     ?>
     </body>
