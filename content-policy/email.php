@@ -1,6 +1,8 @@
 
     <?php
 
+    echo $_GET["p1"];
+
         $firstName = $_GET["p1"];
         $lastName = $_GET["p2"];
         $emailAddress = $_GET["p3"];
@@ -14,6 +16,8 @@
 
 
         mail("teams@opensauce.uk", "Message from opensauce", $messageSend);
+
+        echo "Debug v4" <br>
 
         echo "The Following message has been sent:\n";
         print $messageSend;
