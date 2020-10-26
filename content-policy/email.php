@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <p>Debug v10</p>
+        <p>Debug v11</p>
     <?php
 
         echo $_POST["p1"];
@@ -22,7 +22,7 @@
 
         mail("teams@opensauce.uk", "Message from opensauce", $messageSend);
 
-        echo "Debug v10"
+        echo "Debug v11";
 
         echo "The Following message has been sent:\n";
         print $messageSend;
