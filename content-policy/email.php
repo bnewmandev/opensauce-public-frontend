@@ -18,7 +18,7 @@
         mail("teams@opensauce.uk", "Message from opensauce", $messageSend);
 
         echo "The Following message has been sent:\n";
-        echo $messageSend;
+        print $messageSend;
 
     ?>
     </body>
