@@ -44,3 +44,10 @@ main {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+.body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-align: left;
+    color: #707070;
+}
