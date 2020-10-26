@@ -1,8 +1,9 @@
 <html>
     <body>
+        <p>Debug v6</p>
     <?php
 
-    echo $_GET["p1"];
+        echo $_GET["p1"];
 
         $firstName = $_GET["p1"];
         $lastName = $_GET["p2"];
@@ -18,7 +19,7 @@
 
         mail("teams@opensauce.uk", "Message from opensauce", $messageSend);
 
-        echo "Debug v5" <br>
+        echo "Debug v6" <br>
 
         echo "The Following message has been sent:\n";
         print $messageSend;
