@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <p>Sent</p>
     <?php
 
         if ($_POST["g-recaptcha-response"] == null) {
@@ -28,8 +27,7 @@
         if (!empty($_POST["email"])) 
             exit;  
 
-
-        echo $_POST["p1"];
+        echo "Message Sent!";
         $firstName = $_POST["p1"];
         $lastName = $_POST["p2"];
         $emailAddress = $_POST["p3"];
