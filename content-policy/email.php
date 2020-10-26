@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <body>
-        <p>Debug v9</p>
+        <p>Debug v10</p>
     <?php
 
         echo $_POST["p1"];
@@ -18,16 +18,15 @@
                         Reason for contact {$reason}\n
                         Message Content:\n\n{$messageRaw}";
         
-        echo $messageSend;
-        /*
+        
 
         mail("teams@opensauce.uk", "Message from opensauce", $messageSend);
 
-        echo "Debug v9" <br>
+        echo "Debug v10"
 
         echo "The Following message has been sent:\n";
         print $messageSend;
-        */
+        
 
     ?>
     </body>
