@@ -35,14 +35,13 @@
         $reason = $_POST["p4"];
         $messageRaw = $_POST["p5"];
 
-        $messageSend = "Name: {$firstName} {$lastName}\n
-                        Email address: {$emailAddress}\n
+        $messageSend = "From: {$firstName} {$lastName} <{$emailAddress}>\n
                         Reason for contact: {$reason}\n
-                        Message Content:\n\n{$messageRaw}";
+                        Email Content:\n\n{$messageRaw}\n";
         
         
 
-        mail("teams@opensauce.uk", "Contact Page", $messageSend);
+        mail("contact@opensauce.uk", "Contact Email", $messageSend);
 
         // echo "Debug v11";
 
