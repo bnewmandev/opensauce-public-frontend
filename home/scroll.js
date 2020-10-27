@@ -51,12 +51,14 @@ $.getJSON('home/data.json', function(data)
         {
             AppendLink(
                 dict.menuID,
-                dict.pageLinks[i],
+                dict.pageLinks[i], 
                 dict.imgLinks[i],
                 dict.altTexts[i]
             );
             i++;
         }
+        //AppendNav(dict.menuID,"NavButton");
+
     }
 
     function AppendLink(menuID, pageLink, imgLink, altText)
@@ -75,9 +77,30 @@ $.getJSON('home/data.json', function(data)
 
         console.log(nodeA);
     }
+
+
+    function AppendNav(menuID, altText, buttonID="debug")
+    {
+        // console.log("Append Link Function Called")
+        var nodeA = document.createElement("button");
+        nodeA.class = "nav-button-right";
+        nodeA.id = "debug";
+
+        var nodeI = document.createElement("img");
+        nodeI.src = "https://via.placeholder.com/36x57.png";
+        nodeI.alt = altText;
+        nodeI.className = "nav-button";
+
+        nodeA.appendChild(nodeI);
+        document.getElementById(menuID).appendChild(nodeA);
+
+        console.log(nodeA);
+    }
+
+
     console.log("Loaded JS File");
     UpdateMenu("recent");
-    UpdateMenu("ingredients");
-    UpdateMenu("authors");
+    // UpdateMenu("ingredients"); //COMMENTED OUT FOR DEBUG ONLY
+    // UpdateMenu("authors");
 
 });
