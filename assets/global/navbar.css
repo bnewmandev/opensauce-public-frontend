@@ -3,15 +3,10 @@
     padding: 0;
 }
 
-body {
-    background-color: wheat;
-}
-
 nav {
     
     width: 84.375%; /* 1620 / 1920 */
     margin: 0 auto;
-    border: 3px solid #FF00FF;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,17 +19,19 @@ nav {
     text-decoration: none;
     text-emphasis: none;
     margin-right: 4.3209876543209874%; /* 70 / 1620 */
+    margin-top: 48px;
 }
 
 #navbar-login {
     display: flex;
-    background-color: #9be9a3;
+    background-color: rgba(181, 244, 188, 0.7);
     width: 14.012345679012345%; /* 227 / 1620 */ 
     height: 87px;
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
     margin-right: 24.259259259259258%; /* 393 / 1620 */
+    margin-top: 27px;
 }
 
 #navbar-login a {
@@ -47,6 +44,19 @@ nav {
     font-size: 24px; 
 }
 
+#navbar-login a::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:  rgba(19, 106, 18, 1);
+    opacity: 1; /* Firefox */
+}
+
+#navbar-login a::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(19, 106, 18, 1);
+}
+
+#navbar-login a:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(19, 106, 18, 1);
+}
+
 #navbar-search {
     width: 33.024691358024694%; /* 535 / 1620 */ 
     height: 80px;
@@ -55,6 +65,7 @@ nav {
     background-color: white;
     display: flex;
     align-items: center;
+    margin-top: 30px;
 }
 
 #navbar-search img {
@@ -65,11 +76,11 @@ nav {
     margin-left: 4.1%;
     width: 75%;
     font-family: 'Salsa', cursive;
-    color: #136a12;
+    color: rgba(19, 106, 18, 1);
     border: none;
     font-size: 24px;
 }
 
 #navbar-profile img {
-    border-radius: 100%;
+    margin-top: 18px;
 }

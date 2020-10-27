@@ -12,39 +12,43 @@
         if (window.location.host == 'opensauce.uk') { document.write('<script async defer data-website-id="d94a20f8-ed33-4493-bc63-c58c37c0c50f" src="https://umami.opensauce.uk/umami.js"></sc' + 'ript>') }
         </script> 
         <script src="home/scroll.js"></script>
+        <script src="home/home-afterload.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="assets/global/navbar.css">
         <link rel="stylesheet" type="text/css" href="home/scroll.css">
         <link rel="stylesheet" type="text/css" href="assets/global/footer.css">
     </head>
     <body>
+        <div class="colour-mask">
         <header>
             <nav>
-                <a href="home.html" id="navbar-logo"><img src="https://via.placeholder.com/222x44.png"></a>
+                <a href="home.html" id="navbar-logo"><img src="assets/logo.png"></a>
                 <div id="navbar-login"><a class="navbar-text">Login/Sign Up</a></div>
                 <div id="navbar-search">
-                    <img src="https://via.placeholder.com/44x44.png">
+                    <img src="assets/search-icon.png">
                     <input class="navbar-text" class="txt" type="text" placeholder="Search...">
                 </div>
-                <a id="navbar-profile"><img src="https://via.placeholder.com/103x103.png"></a>
+                <a id="navbar-profile"><img src="assets/account-icon.png"></a>
             </nav>
         </header>
         <main>
             <div class="scroller-wrapper">
-                <div id="recent-posts">
-                    <p>Recent Posts</p>
+                <div id="recent-posts" class="row">
+                    <!-- <p>Recent Posts</p> -->
+                    <button type="button" onclick="RecentLeft()" id="recent-nav-button-l"><img class="nav-button-l" src="home\images\arrow.png"></button>
                     <div id="recent-posts-js" class="scroller">
                        <!--see scroll.js and data.json-->
                     </div>
+                    <button type="button" onclick="RecentRight()" id="recent-nav-button-r"><img class="nav-button-r" src="home\images\arrow.png"></button>
                 </div>
-                <div id="ingredients">
-                    <p>Ingredients</p>
+                <div id="ingredients" class="row">
+                    <!-- <p>Ingredients</p> -->
                     <div id="ingredients-js" class="scroller">
                         <!--see scroll.js and data.json-->
                     </div>
                 </div>
-                <div id="authors">
-                    <p>Authors</p>
+                <div id="authors" class="row">
+                    <!-- <p>Authors</p> -->
                     <div id="authors-js" class="scroller">
                         <!--see scroll.js and data.json-->
                     </div>
@@ -60,5 +64,6 @@
                 <a href="legal/privacy.html">Privacy Policy</a>
             </div>
         </footer>
+        </div>
     </body>
 </html>
