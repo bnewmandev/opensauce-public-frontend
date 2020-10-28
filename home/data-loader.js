@@ -100,7 +100,7 @@ $.getJSON('home/data.json', function(data)
 
     console.log("Loaded JS File");
     UpdateMenu("recent");
-    // UpdateMenu("ingredients"); //COMMENTED OUT FOR DEBUG ONLY
-    // UpdateMenu("authors");
+    UpdateMenu("ingredients");
+    UpdateMenu("authors");
 
 });

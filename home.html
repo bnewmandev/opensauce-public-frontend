@@ -11,11 +11,11 @@
         <script>
         if (window.location.host == 'opensauce.uk') { document.write('<script async defer data-website-id="d94a20f8-ed33-4493-bc63-c58c37c0c50f" src="https://umami.opensauce.uk/umami.js"></sc' + 'ript>') }
         </script> 
-        <script src="home/scroll.js"></script>
-        <script src="home/home-afterload.js"></script>
+        <script src="home/scroller.js"></script>
+        <script src="home/data-loader.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="assets/global/navbar.css">
-        <link rel="stylesheet" type="text/css" href="home/scroll.css">
+        <link rel="stylesheet" type="text/css" href="home/body.css">
         <link rel="stylesheet" type="text/css" href="assets/global/footer.css">
     </head>
     <body>
@@ -31,39 +31,47 @@
                 <a id="navbar-profile"><img src="assets/account-icon.png"></a>
             </nav>
         </header>
-        <main>
-            <div class="scroller-wrapper">
-                <div id="recent-posts" class="row">
-                    <!-- <p>Recent Posts</p> -->
-                    <button type="button" onclick="RecentLeft()" id="recent-nav-button-l"><img class="nav-button-l" src="home\images\arrow.png"></button>
-                    <div id="recent-posts-js" class="scroller">
-                       <!--see scroll.js and data.json-->
-                    </div>
-                    <button type="button" onclick="RecentRight()" id="recent-nav-button-r"><img class="nav-button-r" src="home\images\arrow.png"></button>
-                </div>
-                <div id="ingredients" class="row">
-                    <!-- <p>Ingredients</p> -->
-                    <div id="ingredients-js" class="scroller">
+            <main>
+                <div class="scroller-wrapper">
+                    <div id="recent-posts" class="row">
+                        <!-- <p>Recent Posts</p> -->
+                        <button class="l-button" type="button" onclick="RecentLeft()" id="recent-nav-button-l"><img class="nav-button-l" src="home\images\arrow.png"></button>
+                        <div id="recent-posts-js" class="scroller">
                         <!--see scroll.js and data.json-->
+                        </div>
+                        <button class="r-button" type="button" onclick="RecentRight()" id="recent-nav-button-r"><img class="nav-button-r" src="home\images\arrow.png"></button>
+                    </div>
+                    <div id="ingredients" class="row">
+                        <button class="l-button" type="button" onclick="IngredientsLeft()" id="ingredients-nav-button-l"><img class="nav-button-l" src="home\images\arrow.png"></button>
+                        <div id="ingredients-js" class="scroller">
+
+                        </div>
+                        <button class="r-button" type="button" onclick="IngredientsRight()" id="ingredients-nav-button-r"><img class="nav-button-r" src="home\images\arrow.png"></button>
+                    </div>
+                    <div id="authors" class="row">
+                        <!-- <p>Authors</p> -->
+                        <button class="l-button" type="button" onclick="AuthorsLeft()" id="authors-nav-button-l"><img class="nav-button-l" src="home\images\arrow.png"></button>
+                        <div id="authors-js" class="scroller">
+                            <!--see scroll.js and data.json-->
+                        </div>
+                        <button class="r-button" type="button" onclick="AuthorsRight()" id="authors-nav-button-r"><img class="nav-button-r" src="home\images\arrow.png"></button>
                     </div>
                 </div>
-                <div id="authors" class="row">
-                    <!-- <p>Authors</p> -->
-                    <div id="authors-js" class="scroller">
-                        <!--see scroll.js and data.json-->
-                    </div>
+            </main>
+            <footer>
+                <div class="footer-row" id="footer-top-row">
+                    <a>Ingredients</a>
+                    <a>Contact</a>
+                    <a>About</a>
+                    <a>Privacy Policy</a>
+                    <a>Authors</a>
+                    <a>Terms Of Service</a>
                 </div>
-            </div>
-        </main>
-        <footer>
-            <p>OpenSauce</p>
-            <div id="footer-links">
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="legal/content.html">Content Policy</a>
-                <a href="legal/privacy.html">Privacy Policy</a>
-            </div>
-        </footer>
+                <div class="footer-row" id="footer-bottom-row">
+                    <a>Recent Posts and Articles</a>
+                    <a>Content Policy</a>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
