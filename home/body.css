@@ -1,7 +1,7 @@
 body {
     background-image: url('images/background.png');
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
 }
 
 main {
@@ -9,7 +9,7 @@ main {
     margin: 80px auto;
     box-sizing: border-box;
     height: fit-content;
-    margin-bottom: 47px;
+    margin-bottom: 5vh;
 }
 
 .scroller-wrapper {
@@ -28,7 +28,7 @@ main {
     background-color: rgba(181, 244, 188, 0.7);
     padding-top: 20px;
     padding-bottom: 19px;
-    margin-bottom: 41px;
+    margin-bottom: 5vh;
 }
 
 .scroller {
@@ -81,4 +81,10 @@ main {
 
 .row button:hover {
     cursor: pointer;
+}
+
+@media only screen and (min-height: 1081px) {
+    main {
+        margin-bottom: 20vh;
+    }
 }
