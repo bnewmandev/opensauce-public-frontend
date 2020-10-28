@@ -18,12 +18,12 @@ $.getJSON('home/scroller-data.json', function(data)
             altTexts: data.Ingredients.altTexts
         };
 
-        const authorsDict = 
+        const recipesDict = 
         {
-            menuID: "authors-js",
-            pageLinks: data.Authors.pageLinks,
-            imgLinks: data.Authors.imgLinks,
-            altTexts: data.Authors.altTexts
+            menuID: "recipes-js",
+            pageLinks: data.Recipes.pageLinks,
+            imgLinks: data.Recipes.imgLinks,
+            altTexts: data.Recipes.altTexts
         };
 
         if (menu == "recent")
@@ -34,9 +34,9 @@ $.getJSON('home/scroller-data.json', function(data)
         {
             return ingredientsDict;
         }
-        else if (menu == "authors")
+        else if (menu == "recipes")
         {
-            return authorsDict;
+            return recipesDict;
         }
     }
 
@@ -101,6 +101,6 @@ $.getJSON('home/scroller-data.json', function(data)
     console.log("Loaded JS File");
     UpdateMenu("recent");
     UpdateMenu("ingredients");
-    UpdateMenu("authors");
+    UpdateMenu("recipes");
 
 });
