@@ -84,3 +84,26 @@ nav {
 #navbar-profile img {
     margin-top: 18px;
 }
+
+@media only screen and (orientation: portrait) {
+    nav {
+        flex-direction: column;
+        height: 500px;
+    }
+    #navbar-logo {
+        order: 1;
+    }
+    #navbar-login {
+        width: 95%;
+        margin: 0 auto;
+        order: 3;
+    }
+    #navbar-search {
+        width: 95%;
+        margin: 0 auto;
+        order: 4;
+    }
+    #navbar-profile {
+        order: 2;
+    }
+}
