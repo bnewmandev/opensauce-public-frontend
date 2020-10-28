@@ -14,3 +14,12 @@ function IngredientsRight() {
   document.getElementById("ingredients-js").scrollLeft += 250;
   return 200;
 };
+
+function RecipesLeft() {
+  document.getElementById("recipes-js").scrollLeft -= 250;
+}
+
+function RecipesRight() {
+  document.getElementById("recipes-js").scrollLeft += 250;
+  return 200;
+};
