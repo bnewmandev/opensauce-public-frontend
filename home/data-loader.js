@@ -1,4 +1,4 @@
-$.getJSON('home/data.json', function(data)
+$.getJSON('home/scroller-data.json', function(data)
 {
     function SetMenu(menu)
     {
