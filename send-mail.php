@@ -25,7 +25,7 @@
         }
 
         if (!empty($_POST["email"])) 
-            header("Location: home/home.html");
+            header("Location: home.html");
             exit;  
         $firstName = $_POST["p1"];
         $lastName = $_POST["p2"];
