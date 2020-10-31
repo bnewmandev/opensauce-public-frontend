@@ -101,3 +101,13 @@ main {
     }
 
 }
+
+@media only screen and (orientation: portrait ), (max-width: 1000px) {
+    .row button {
+        display: none;
+    }
+    .row {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}

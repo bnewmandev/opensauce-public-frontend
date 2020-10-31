@@ -85,7 +85,7 @@ nav {
     margin-top: 18px;
 }
 
-@media only screen and (orientation: portrait ), (max-width: 1425px) {
+@media only screen and (orientation: portrait ), (max-width: 1000px) {
     nav {
         flex-direction: column;
         height: 500px;
