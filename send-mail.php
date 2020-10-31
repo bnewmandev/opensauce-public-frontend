@@ -25,8 +25,8 @@
         }
 
         if (!empty($_POST["email"])) 
-            exit;  
-            echo "Message Sent!";
+            exit; 
+            header("Location: home.html");
         $firstName = $_POST["p1"];
         $lastName = $_POST["p2"];
         $emailAddress = $_POST["p3"];
@@ -37,7 +37,7 @@
 
         $messageSend = "From: {$firstName} {$lastName} <{$emailAddress}>\n
                         Reason for contact: {$reason}\n
-                        Email Content:\n\n{$messageRaw}\n";
+                        Email Content:\n{$messageRaw}\n";
         
         
 
