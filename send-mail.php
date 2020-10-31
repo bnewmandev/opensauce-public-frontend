@@ -25,8 +25,8 @@
         }
 
         if (!empty($_POST["email"])) 
-            header("Location: home.html");
             exit;  
+            echo "Message Sent!";
         $firstName = $_POST["p1"];
         $lastName = $_POST["p2"];
         $emailAddress = $_POST["p3"];
