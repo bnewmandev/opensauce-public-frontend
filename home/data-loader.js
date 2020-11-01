@@ -42,7 +42,7 @@ $.getJSON('home/scroller-data.json', function(data)
 
     function UpdateMenu(menu)
     {
-        console.log("UpdateMenu called")
+//        console.log("UpdateMenu called")
         let dict = SetMenu(menu);
         let i = 0;
         length = Object.keys(dict.pageLinks).length
@@ -75,7 +75,7 @@ $.getJSON('home/scroller-data.json', function(data)
         nodeA.appendChild(nodeI);
         document.getElementById(menuID).appendChild(nodeA);
 
-        console.log(nodeA);
+ //       console.log(nodeA);
     }
 
 
@@ -94,11 +94,11 @@ $.getJSON('home/scroller-data.json', function(data)
         nodeA.appendChild(nodeI);
         document.getElementById(menuID).appendChild(nodeA);
 
-        console.log(nodeA);
+//        console.log(nodeA);
     }
 
 
-    console.log("Loaded JS File");
+//    console.log("Loaded JS File");
     UpdateMenu("recent");
     UpdateMenu("ingredients");
     UpdateMenu("recipes");
