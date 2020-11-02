@@ -1,109 +1,96 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: Salsa, 'sans-serif';
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
 }
 
-nav {
-    
-    width: 84.375%; /* 1620 / 1920 */
-    margin: 0 auto;
+a:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    background-image: url("https://cdn.opensauce.uk/assets/background.png");
+}
+
+header {
+    margin-top: 0.5833333333333334rem;
     display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    height: 103px;
-    flex-wrap: nowrap;
 }
 
-#navbar-logo {
-    text-decoration: none;
-    text-emphasis: none;
-    margin-right: 4.3209876543209874%; /* 70 / 1620 */
-    margin-top: 48px;
-}
-
-#navbar-login {
+header #search-box {
+    margin-left: 1.6666666666666666%; /* 32 / 1920 */ 
     display: flex;
-    background-color: rgba(181, 244, 188, 0.7);
-    width: 14.012345679012345%; /* 227 / 1620 */ 
-    height: 87px;
+    border-radius: 3.3333333333333335rem;
+    width: 23.489583333333333%; /* 451 / 1920 */ 
+    height: 5.083333333333333rem;
+    align-items: center;
+    background-color: white;
+}
+
+header #search-box a {
+    margin-left: 3.547671840354767%; /* 16 / 451 */ 
+}
+
+header #search-box a img {
+    width: 3.1666666666666665rem;
+    height: 3.6666666666666665rem
+}
+
+header #search-box input {
+    margin-right: 0.4166666666666667rem;
+    width: 80% ;
+    border: none;
+    font-size: 1.917rem;
+    color: black;
+    margin-left: 2.5%;
+}
+
+#logo {
+    align-self: center;
+    border-radius: 100%;
+}
+
+#logo img {
+    border-radius: 100%;
+}
+
+header #container-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 21.979166666666666%; /* 422 / 1920 */
+}
+
+#login-signup {
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
-    margin-right: 24.259259259259258%; /* 393 / 1620 */
-    margin-top: 27px;
-}
-
-#navbar-login a {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 47.86729857819905%; /* 202 / 422 */
+    height: 5.666666666666667rem;
+    font-size: 2rem;
+    border-radius: 5.833333333333333rem;
     overflow: hidden;
-    display: block;
-    font-family: 'Salsa', cursive;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    color: #136a12;
-    font-size: 24px; 
 }
 
-#navbar-login a::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color:  rgba(19, 106, 18, 1);
-    opacity: 1; /* Firefox */
-}
-
-#navbar-login a::-ms-input-placeholder { /* Microsoft Edge */
-    color: rgba(19, 106, 18, 1);
-}
-
-#navbar-login a:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: rgba(19, 106, 18, 1);
-}
-
-#navbar-search {
-    width: 33.024691358024694%; /* 535 / 1620 */ 
-    height: 80px;
-    border-radius: 40px;
+#account button {
     border: none;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
 }
 
-#navbar-search img {
-    margin-left: 4.5%;
-}
-
-#navbar-search input {
-    margin-left: 4.1%;
-    width: 75%;
-    font-family: 'Salsa', cursive;
-    color: rgba(19, 106, 18, 1);
-    border: none;
-    font-size: 24px;
-}
-
-#navbar-profile img {
-    margin-top: 18px;
-}
-
-@media only screen and (orientation: portrait ), (max-width: 1000px) {
-    nav {
-        flex-direction: column;
-        height: 500px;
-    }
-    #navbar-logo {
-        order: 1;
-    }
-    #navbar-login {
-        width: 95%;
-        margin: 0 auto;
-        order: 3;
-    }
-    #navbar-search {
-        width: 95%;
-        margin: 0 auto;
-        order: 4;
-    }
-    #navbar-profile {
-        order: 2;
-    }
+#account button img {
+    border-radius: 100%;
 }
