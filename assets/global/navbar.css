@@ -25,6 +25,7 @@ html {
 
 body {
     background-image: url("https://cdn.opensauce.uk/assets/background.png");
+    background-size: cover;
 }
 
 header {
