@@ -12,6 +12,8 @@
         <script>
             if (window.location.host == 'opensauce.uk') { document.write('<script async defer data-website-id="d94a20f8-ed33-4493-bc63-c58c37c0c50f" src="https://umami.opensauce.uk/umami.js"></sc' + 'ript>') }
         </script>
+        <script src="home/scroller.js"></script>
+        <script src="home/data-loader.js"></script>
         <!-- CSS Files -->
         <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="assets/global/navbar.css">
@@ -37,4 +39,39 @@
             </div>
         </div>
     </header>
+    <main>
+        <article>
+            <button class="left-button" onclick="RecentLeft()">
+                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
+            </button>
+            <div id="recent-posts-js">
+
+            </div>
+            <button class="right-button" onclick="RecentRight()">
+                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
+            </button>
+        </article>
+        <article>
+            <button class="left-button" onclick="IngredientsLeft()">
+                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
+            </button>
+            <div id="ingredients-js">
+
+            </div>
+            <button class="right-button" onclick="IngredientsRight()">
+                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
+            </button>
+        </article>
+        <article>
+            <button class="left-button" onclick="RecipesLeft()">
+                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
+            </button>
+            <div id="recipes-js">
+
+            </div>
+            <button class="right-button" onclick="RecipesRight()">
+                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
+            </button>
+        </article>
+    </main>
 </html>

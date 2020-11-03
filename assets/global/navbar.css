@@ -7,6 +7,10 @@
     background-color: transparent;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a:hover {
     cursor: pointer;
 }
@@ -29,6 +33,7 @@ header {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 4.75rem;
 }
 
 header #search-box {
