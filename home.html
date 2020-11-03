@@ -3,76 +3,75 @@
     <head>
         <title>OpenSauce</title>
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Javascript Files -->
         <script
 			  src="https://code.jquery.com/jquery-3.5.1.js"
 			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
               crossorigin="anonymous">
         </script>
-        <!-- <script src="home/animatedScroller.js" defer></script> -->
         <script>
-        if (window.location.host == 'opensauce.uk') { document.write('<script async defer data-website-id="d94a20f8-ed33-4493-bc63-c58c37c0c50f" src="https://umami.opensauce.uk/umami.js"></sc' + 'ript>') }
-        </script> 
+            if (window.location.host == 'opensauce.uk') { document.write('<script async defer data-website-id="d94a20f8-ed33-4493-bc63-c58c37c0c50f" src="https://umami.opensauce.uk/umami.js"></sc' + 'ript>') }
+        </script>
         <script src="home/scroller.js"></script>
         <script src="home/data-loader.js"></script>
+        <!-- CSS Files -->
         <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="assets/global/navbar.css">
         <link rel="stylesheet" type="text/css" href="home/body.css">
         <link rel="stylesheet" type="text/css" href="assets/global/footer.css">
     </head>
-    <body>
-        <div class="colour-mask">
-        <header>
-            <nav>
-                <a href="home.html" id="navbar-logo"><img src="assets/logo.png"></a>
-                <div id="navbar-login"><a class="navbar-text">Login/Sign Up</a></div>
-                <div id="navbar-search">
-                    <img src="assets/search-icon.png">
-                    <input class="navbar-text" class="txt" type="text" placeholder="Search...">
-                </div>
-                <a id="navbar-profile"><img src="assets/account-icon.png"></a>
-            </nav>
-        </header>
-            <main>
-                <div class="scroller-wrapper">
-                    <div id="recent-posts" class="row">
-                        <!-- <p>Recent Posts</p> -->
-                        <button class="l-button" type="button" onclick="RecentLeft()" id="recent-nav-button-l"><img class="nav-button-l" src="home\images\arrow.png"></button>
-                        <div id="recent-posts-js" class="scroller">
-                        <!--see scroll.js and data.json-->
-                        </div>
-                        <button class="r-button" type="button" onclick="RecentRight()" id="recent-nav-button-r"><img class="nav-button-r" src="home\images\arrow.png"></button>
-                    </div>
-                    <div id="ingredients" class="row">
-                        <button class="l-button" type="button" onclick="IngredientsLeft()" id="ingredients-nav-button-l"><img class="nav-button-l" src="home\images\arrow.png"></button>
-                        <div id="ingredients-js" class="scroller">
-
-                        </div>
-                        <button class="r-button" type="button" onclick="IngredientsRight()" id="ingredients-nav-button-r"><img class="nav-button-r" src="home\images\arrow.png"></button>
-                    </div>
-                    <div id="recipes" class="row">
-                        <button class="l-button" type="button" onclick="RecipesLeft()" id="recipes-nav-button-l"><img class="nav-button-l" src="home\images\arrow.png"></button>
-                        <div id="recipes-js" class="scroller">
-                            <!--see scroll.js and data.json-->
-                        </div>
-                        <button class="r-button" type="button" onclick="RecipesRight()" id="recipes-nav-button-r"><img class="nav-button-r" src="home\images\arrow.png"></button>
-                    </div>
-                </div>
-            </main>
-        
-        <footer>
-            <div class="footer-row" id="footer-top-row">
-                <a>Ingredients</a>
-                <a href="contact.html">Contact</a>
-                <a href="about.html">About</a>
-                <a href="legal/privacy.html">Privacy Policy</a>
-                <a>Authors</a>
-                <a>Terms Of Service</a>
-            </div>
-            <div class="footer-row" id="footer-bottom-row">
-                <a>Recent Posts and Articles</a>
-                <a href="legal/content.html">Content Policy</a>
-            </div>
-        </footer>
+    <header>
+        <div id="search-box">
+            <a><img src="https://cdn.opensauce.uk/assets/header/magnifying-glass.png"></a>
+            <input type="text" placeholder="Search...">
         </div>
-    </body>
+        <div id="logo">
+            <a><img src="https://cdn.opensauce.uk/assets/Logo.svg"></a>
+        </div>
+        <div id="container-right">
+            <div id="login-signup">
+                <a href="http://example.com">Log in/Sign up</a>
+            </div>
+            <div id="account">
+                <button type="button">
+                    <img src="https://via.placeholder.com/103x103.png">
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <button class="left-button" onclick="RecentLeft()">
+                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
+            </button>
+            <div id="recent-posts-js">
+
+            </div>
+            <button class="right-button" onclick="RecentRight()">
+                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
+            </button>
+        </article>
+        <article>
+            <button class="left-button" onclick="IngredientsLeft()">
+                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
+            </button>
+            <div id="ingredients-js">
+
+            </div>
+            <button class="right-button" onclick="IngredientsRight()">
+                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
+            </button>
+        </article>
+        <article>
+            <button class="left-button" onclick="RecipesLeft()">
+                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
+            </button>
+            <div id="recipes-js">
+
+            </div>
+            <button class="right-button" onclick="RecipesRight()">
+                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
+            </button>
+        </article>
+    </main>
 </html>
