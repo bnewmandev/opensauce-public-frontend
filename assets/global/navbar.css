@@ -37,7 +37,7 @@ header {
     margin-bottom: 4.75rem;
 }
 
-header #search-box {
+#search-box {
     margin-left: 1.6666666666666666%; /* 32 / 1920 */ 
     display: flex;
     border-radius: 3.3333333333333335rem;
@@ -47,16 +47,16 @@ header #search-box {
     background-color: white;
 }
 
-header #search-box a {
+#search-box a {
     margin-left: 3.547671840354767%; /* 16 / 451 */ 
 }
 
-header #search-box a img {
+#search-box a img {
     width: 3.1666666666666665rem;
     height: 3.6666666666666665rem
 }
 
-header #search-box input {
+#search-box input {
     margin-right: 0.4166666666666667rem;
     width: 80% ;
     border: none;
@@ -74,7 +74,7 @@ header #search-box input {
     border-radius: 100%;
 }
 
-header #container-right {
+#container-right {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -99,4 +99,55 @@ header #container-right {
 
 #account button img {
     border-radius: 100%;
+}
+
+@media screen and (max-width: 1650px) {
+
+    #login-signup {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    #login-signup {
+        font-size: 1rem;
+    }
+
+    header #search-box input {
+        width: 70%;
+    }
+
+}
+
+/* PORTRAIT */
+@media screen and (max-width: 900px) {
+    header {
+        flex-direction: column;
+        margin: 0;
+        border: 1px solid black;
+    }
+
+    #logo {
+        order: 1;
+        margin: 0;
+        padding: 0;
+    }
+
+    #search-box {
+        order: 2;
+        width: 60%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #container-right {
+        order: 3;
+        width: 100%;
+    }
+
+    #login-signup {
+        font-size: 1.5rem;
+    }
 }
