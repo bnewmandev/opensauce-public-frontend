@@ -126,7 +126,6 @@ header {
     header {
         flex-direction: column;
         margin: 0;
-        border: 1px solid black;
     }
 
     #logo {
@@ -149,5 +148,10 @@ header {
 
     #login-signup {
         font-size: 1.5rem;
+    }
+
+    body {
+        background-image: url("https://cdn.opensauce.uk/assets/background-mobile.png");
+        background-size: cover;
     }
 }
