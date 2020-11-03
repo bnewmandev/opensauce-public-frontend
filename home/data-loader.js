@@ -67,11 +67,17 @@ $.getJSON('home/scroller-data.json', function(data)
         var nodeA = document.createElement("a");
         nodeA.href = pageLink;
         nodeA.className = "scroller-general-image";
+        nodeA.className = "tooltip";
 
         var nodeI = document.createElement("img");
         nodeI.src = imgLink;
         nodeI.alt = altText;
 
+        var nodeT = document.createElement("span");
+        nodeT.innerHTML = altText;
+        nodeT.className = "tooltiptext";
+
+        nodeA.appendChild(nodeT);
         nodeA.appendChild(nodeI);
         document.getElementById(menuID).appendChild(nodeA);
 

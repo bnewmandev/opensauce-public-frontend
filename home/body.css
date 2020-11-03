@@ -46,3 +46,24 @@ article div img {
     border: 5px solid black;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: 8%;
+    width: 50%;
+    overflow: hidden;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
