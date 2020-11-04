@@ -1,7 +1,6 @@
 /* Hide scrollbar for Chrome, Safari and Opera */
 article div::-webkit-scrollbar {
     display: none;
-    scroll-behavior: smooth;
   }
 
 main {
@@ -38,7 +37,7 @@ article div {
     overflow-x: auto;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important; 
 }
 
 article div img {
