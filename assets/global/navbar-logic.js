@@ -77,6 +77,11 @@ function ToggleFavorites()
     else
     {
         element.style.display = "none";
+        var node = document.getElementById("favorites-js");
+        while (node.firstChild)
+        {
+            node.removeChild(node.lastChild);
+        }
     }
 }
 
@@ -88,7 +93,6 @@ function ToggleSettings()
     if (style.display == "none")
     {
         element.style.display = "initial";
-        GetFavorites();
     }
     else
     {
