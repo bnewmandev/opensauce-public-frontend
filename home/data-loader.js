@@ -72,6 +72,7 @@ $.getJSON('home/scroller-data.json', function(data)
         var nodeI = document.createElement("img");
         nodeI.src = imgLink;
         nodeI.alt = altText;
+        nodeI.title = altText;
 
         var nodeT = document.createElement("span");
         nodeT.innerHTML = altText;
@@ -84,24 +85,6 @@ $.getJSON('home/scroller-data.json', function(data)
  //       console.log(nodeA);
     }
 
-
-    function AppendNav(menuID, altText, buttonID="debug")
-    {
-        // console.log("Append Link Function Called")
-        var nodeA = document.createElement("button");
-        nodeA.class = "nav-button-right";
-        nodeA.id = "debug";
-
-        var nodeI = document.createElement("img");
-        nodeI.src = "https://via.placeholder.com/36x57.png";
-        nodeI.alt = altText;
-        nodeI.className = "nav-button";
-
-        nodeA.appendChild(nodeI);
-        document.getElementById(menuID).appendChild(nodeA);
-
-//        console.log(nodeA);
-    }
 
 
 //    console.log("Loaded JS File");
