@@ -1,6 +1,7 @@
 /* Hide scrollbar for Chrome, Safari and Opera */
 article div::-webkit-scrollbar {
     display: none;
+    scroll-behavior: smooth;
   }
 
 main {
