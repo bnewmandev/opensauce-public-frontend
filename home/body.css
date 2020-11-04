@@ -30,6 +30,11 @@ main article button {
     transform: rotate(180deg);
 }
 
+article button img:hover {
+    transition: 0.2s;
+    filter: invert(50%);
+}
+
 article div {
     margin-left: 5px;
     margin-right: 5px;
