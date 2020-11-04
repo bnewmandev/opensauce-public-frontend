@@ -5,7 +5,7 @@ var currentUser = {
     Name: "Todd Howard",
     Email: "todd@opensauce.uk",
     Type: "User",
-    Bio: "",
+    Bio: "adsadssdasadsda",
     Favorites: [
         {
             Type: "Author",
@@ -93,6 +93,7 @@ function ToggleSettings()
     if (style.display == "none")
     {
         element.style.display = "initial";
+        GetAccountSettings();
     }
     else
     {
@@ -101,6 +102,12 @@ function ToggleSettings()
 }
 
 
+
+function GetAccountSettings()
+{
+    document.getElementById("account-bio").innerText = currentUser.Bio;
+    document.getElementById("account-image-upload").src = currentUser.ProfilePicture;
+}
 
 
 function GetFavorites()
