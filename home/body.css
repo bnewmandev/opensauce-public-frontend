@@ -3,9 +3,7 @@ article div::-webkit-scrollbar {
     display: none;
 }
 
-*:focus {
-    outline:none;
-}
+button:focus {outline:0;}
 
 main {
     display: flex;
