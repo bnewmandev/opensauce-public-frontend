@@ -1,7 +1,11 @@
 /* Hide scrollbar for Chrome, Safari and Opera */
 article div::-webkit-scrollbar {
     display: none;
-  }
+}
+
+*:focus {
+    outline:none;
+}
 
 main {
     display: flex;
