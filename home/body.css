@@ -1,5 +1,5 @@
 /* Hide scrollbar for Chrome, Safari and Opera */
-.scroller::-webkit-scrollbar {
+article div::-webkit-scrollbar {
     display: none;
   }
 
