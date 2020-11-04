@@ -14,11 +14,13 @@
         </script>
         <script src="home/scroller.js"></script>
         <script src="home/data-loader.js"></script>
+        <script src="assets/global/navbar-logic.js" defer></script>
         <!-- CSS Files -->
         <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="assets/global/navbar.css">
         <link rel="stylesheet" type="text/css" href="home/body.css">
         <link rel="stylesheet" type="text/css" href="assets/global/footer.css">
+        <link rel="stylesheet" type="text/css" href="assets/global/account.css">
     </head>
     <div id="page-container">
     <header>
@@ -34,9 +36,45 @@
                 <a href="http://example.com">Log in/Sign up</a>
             </div>
             <div id="account">
-                <button type="button">
+                <button id="account-button" type="button">
                     <img src="https://cdn.opensauce.uk/assets/global/Account.png">
                 </button>
+
+
+                <section id="account-page">
+                    <div id="account-submenu-container">
+                        <div id="account-favorites">
+
+                            <button title="Scroll Left" class="left-button" onclick="AccountLeft()">
+                                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
+                            </button>
+
+                            <div id=favorites-js>
+
+                            </div>
+
+                            <button title="Scroll Left" class="right-button" onclick="AccountRight()">
+                                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
+                            </button>
+
+                        </div>
+                        <div id="account-settings-menu">
+                            <!-- TODO -->
+                        </div>
+                    </div>
+                    <div id="account-menu-container">
+                        <div id="account-menu">
+                            <img id="account-image" src="https://cdn.opensauce.uk/assets/global/Account.png">
+                            <p id="account-name"></p>
+                            <p id="account-email"></p>
+                            <button id="my-favorites" onclick="ToggleFavorites()" type="button">My Favorites</button>
+                            <button id="account-settings" onclick="ToggleSettings()" type="button">Account Settings</button>
+                            <button id="sign-out" type="button">Sign Out</button>
+                        </div>
+                    </div>
+                </section>
+
+
             </div>
         </div>
     </header>

@@ -26,9 +26,6 @@ main article button {
     border: none;
 }
 
-.right-button {
-    transform: rotate(180deg);
-}
 
 article button img:hover {
     transition: 0.2s;

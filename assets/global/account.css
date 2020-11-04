@@ -1,0 +1,135 @@
+
+.right-button {
+    transform: rotate(180deg);
+}
+
+#account-page {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 100;
+    left: 26.25%; /* 504 / 1920 */ 
+    width: 72.0833333333%; /* 504/1920 */
+    top: 120px;
+    /* border: 3px solid purple; */
+}
+
+#account-page button img:hover {
+    transition: 0.2s;
+    filter: invert(50%);
+}
+
+#account-submenu-container {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 69.50867052023122%; /* 962 / 1384 */ 
+    height: 70rem; /* TEMP */
+    margin-right: 1.5173410404624277%; /* 21 / 1384 */ 
+}
+
+#account-menu-container {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 0;
+    width: 27.8398843930636%; /* 401 / 1384 */ 
+    height: 70rem; 
+    position: absolute;
+}
+
+#account-menu {
+    display: flex;
+    flex-direction: column;
+    height: 43.25em;
+    width: 100%;
+    background-color: rgba(242, 242, 242, 0.7);
+    border-radius: 3.333em;
+    align-items: center;
+}
+
+#account-menu img {
+    margin-top: 19px;
+    width: 12.5em;
+    height: 12.5em;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+#account-name {
+    margin-top: 21px;
+    font-size: 2rem;
+}
+
+#account-email {
+    margin-top: 3px;
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+}
+
+#account-menu button {
+    margin-bottom: 13px;
+    font-size: 2rem;
+    color: rgba(52, 52, 52, 1);
+    background-color: rgba(188, 188, 188, 1);
+    width: 55%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+#account-menu button:hover {
+    color: white;
+}
+
+#sign-out {
+    margin-top: 42px;
+    background-color: rgba(158, 158, 158, 1) !important;
+}
+
+#account-favorites {
+    margin-bottom: 43px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    height: 19.75rem;
+    background-color: rgba(242, 242, 242, 0.7);
+}
+
+#account-favorites button img {
+    box-sizing: border-box;
+    border-radius: 0;
+    padding: 5px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#account-favorites div::-webkit-scrollbar {
+    display: none;
+}
+
+
+#account-favorites div {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 95%;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth !important; 
+}
+
+#favorites-js a img {
+    height: 150px;
+    width: 250px;
+    margin-left: 18px;
+    margin-right: 18px;
+    border: 5px solid black;
+}
+
+#account-settings-menu {
+    display: none;
+    width: 73.1164241164%;
+    float: right;
+    height: 29.583rem;
+    background-color: rgba(242, 242, 242, 0.7);
+    border-radius: 3.333em;
+}
