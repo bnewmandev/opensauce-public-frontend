@@ -108,7 +108,7 @@ function GetFavorites()
     currentUser.Favorites.forEach((object) => {
         console.log(object);
         nodeA = document.createElement("a");
-        nodeA.src = object.Link;
+        nodeA.href = object.Link;
 
         nodeI = document.createElement("img");
         nodeI.src = object.Picture;
