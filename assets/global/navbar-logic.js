@@ -1,4 +1,4 @@
-var currentUser = {
+var currentUser = {     //PRELOADED DATA
     Username: "thoward",
     ProfilePicture: "https://cdn.opensauce.uk/assets/testingfiles/todd.jpg",
     Datejoined: 1604508483,
