@@ -188,6 +188,7 @@
  }
 
  #image-upload-div img {
+    margin-left: 30%;
     height: 150px;
     width: 150px;
     border-radius: 50%;
