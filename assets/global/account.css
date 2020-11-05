@@ -73,6 +73,7 @@
     width: 55%;
     padding-top: 11px;
     padding-bottom: 11px;
+    box-sizing: border-box;
 }
 
 #account-menu button:hover {

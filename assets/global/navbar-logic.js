@@ -65,17 +65,19 @@ function CloseWindow()
     document.getElementById("account-page").style.display = "none";
 }
 
-function ToggleFavorites()
+function ToggleFavorites(idel)
 {
     let element = document.getElementById("account-favorites");
     let style = getComputedStyle(element);
     if (style.display == "none")
     {
+        idel.style.border = "1px solid black";
         element.style.display = "flex";
         GetFavorites();
     }
     else
     {
+        idel.style.border = "none";
         element.style.display = "none";
         var node = document.getElementById("favorites-js");
         while (node.firstChild)
@@ -86,17 +88,19 @@ function ToggleFavorites()
 }
 
 
-function ToggleSettings()
+function ToggleSettings(idel)
 {
     let element = document.getElementById("account-settings-menu");
     let style = getComputedStyle(element);
     if (style.display == "none")
     {
+        idel.style.border = "1px solid black";
         element.style.display = "initial";
         GetAccountSettings();
     }
     else
     {
+        idel.style.border = "none";
         element.style.display = "none";
     }
 }
