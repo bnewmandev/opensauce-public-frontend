@@ -1,0 +1,38 @@
+main article {
+	margin-left: 2.7%;
+	display: flex;
+	flex-direction: column;
+}
+
+main article h1 {
+	font-family: Salsa;
+	font-size: 29px;
+	background-color: rgba(242, 228, 242, 0.6);
+	padding: 10px 15px;
+	border-radius: 30px;
+	height: 3vh;
+	width: max-content;
+	margin-bottom: 25px;
+}
+
+main article img {
+	border-radius: 40px;
+}
+
+.articles {
+	background-color: rgba(242, 228, 242, 0.6);
+	width: 300px;
+	height: 230px;
+	border-radius: 40px;
+}
+
+.a-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.a-wrapper a p {
+	margin-top: 1vh;
+	margin-left: 9%;
+	width: 80%;
+}

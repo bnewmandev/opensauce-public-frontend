@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OpenSauce</title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Javascript Files -->
+        <script
+			  src="https://code.jquery.com/jquery-3.5.1.js"
+			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+              crossorigin="anonymous">
+        </script>
+        <script>
+            if (window.location.host == 'opensauce.uk') { document.write('<script async defer data-website-id="d94a20f8-ed33-4493-bc63-c58c37c0c50f" src="https://umami.opensauce.uk/umami.js"></sc' + 'ript>') }
+        </script>
+        <script src="home/scroller.js"></script>
+        <script src="home/data-loader.js"></script>
+        <script src="assets/global/navbar-logic.js" defer></script>
+        <!-- CSS Files -->
+        <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="assets/global/navbar.css">
+        <link rel="stylesheet" type="text/css" href="recent/recent.css">
+        <link rel="stylesheet" type="text/css" href="assets/global/footer.css">
+        <link rel="stylesheet" type="text/css" href="assets/global/account.css">
+    </head>
+    <div id="page-container">
+    <header>
+        <div id="search-box">
+            <a><img src="https://cdn.opensauce.uk/assets/header/magnifying-glass.png"></a>
+            <input type="text" placeholder="Search...">
+        </div>
+        <div id="logo">
+            <a><img src="https://cdn.opensauce.uk/assets/LogoNew.svg"></a>
+        </div>
+        <div id="container-right">
+            <div id="login-signup">
+                <a href="http://example.com">Log in/Sign up</a>
+            </div>
+            <div id="account">
+                <button id="account-button" type="button">
+                    <img src="https://cdn.opensauce.uk/assets/global/Account.png">
+                </button>
+
+
+                <section id="account-page">
+                    <div id="account-submenu-container">
+                        <div id="account-favorites">
+
+                            <button title="Scroll Left" class="left-button" onclick="AccountLeft()">
+                                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
+                            </button>
+
+                            <div id=favorites-js>
+
+                            </div>
+
+                            <button title="Scroll Left" class="right-button" onclick="AccountRight()">
+                                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
+                            </button>
+
+                        </div>
+                        <div id="account-settings-menu">
+                            <form id="change-account-settings">
+                                <div id="pword">
+                                    <div id="cpassword">
+                                        <label for="cpass">Current Password:</label><br>
+                                        <input id="cpass">
+                                    </div>
+                                    <div id="npassword">
+                                        <label for="npass">New Password:</label><br>
+                                        <input id="npass">
+                                    </div>
+                                </div>
+                                <div id="bottom-account">
+                                    <div>
+                                        <label for="account-bio">Biography:</label><br>
+                                        <textarea id="account-bio"></textarea>
+                                    </div>
+                                    <div id="image-upload-div">
+                                        <img id="account-image-upload" src="https://cdn.opensauce.uk/assets/global/Account.png">
+                                        <input type="file" name="image-upload" id="image-upload">
+                                        <input type="submit" name="submit-account" id="submit-account" value="Submit">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="account-menu-container">
+                        <div id="account-menu">
+                            <img id="account-image" src="https://cdn.opensauce.uk/assets/global/Account.png">
+                            <p id="account-name"></p>
+                            <p id="account-email"></p>
+                            <button id="my-favorites" onclick="ToggleFavorites(this)" type="button">My Favorites</button>
+                            <button id="account-settings" onclick="ToggleSettings(this)" type="button">Account Settings</button>
+                            <button id="sign-out" type="button">Sign Out</button>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <h1>Recent Posts</h1>
+            <div class="a-wrapper">
+                <a><img src="https://via.placeholder.com/294x207.png"></a>
+            </div>
+        </article>
+        <article>
+            <h1>Latest Articles</h1>
+            <div class="a-wrapper">
+                <div class="articles">
+                    <a><p>fh</p></a>
+                </div>
+            </div>
+        </article>
+    </main>
+    </div>
+    <footer>
+        <div id="footer-one">
+            <a>Ingredients</a>
+            <a>Contact</a>
+            <a>About</a>
+            <a>Privacy Policy</a>
+            <a>Authors</a>
+            <a>Terms of Service</a>
+        </div>
+        <div id="footer-two">
+            <a>Content Policy</a>
+            <a>Recent Posts and Articles</a>
+        </div>
+    </footer>
+</html>
