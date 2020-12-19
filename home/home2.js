@@ -80,6 +80,7 @@ $.getJSON('home/scroller-data.json', function(data)
 
         nodeA.appendChild(nodeT);
         nodeA.appendChild(nodeI);
+        console.log(menuID)
         document.getElementById(menuID).appendChild(nodeA);
 
  //       console.log(nodeA);
