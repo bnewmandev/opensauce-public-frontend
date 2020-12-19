@@ -12,13 +12,13 @@
         <script>
             if (window.location.host == 'opensauce.uk') { document.write('<script async defer data-website-id="d94a20f8-ed33-4493-bc63-c58c37c0c50f" src="https://umami.opensauce.uk/umami.js"></sc' + 'ript>') }
         </script>
-        <script src="home/home1.js"></script>
-        <script src="home/home2.js"></script>
+        <script src="home/scroller.js"></script>
+        <script src="home/data-loader.js"></script>
         <script src="assets/global/navbar-logic.js" defer></script>
         <!-- CSS Files -->
         <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="assets/global/navbar.css">
-        <link rel="stylesheet" type="text/css" href="home/body.css">
+        <link rel="stylesheet" type="text/css" href="recent/recent.css">
         <link rel="stylesheet" type="text/css" href="assets/global/footer.css">
         <link rel="stylesheet" type="text/css" href="assets/global/account.css">
     </head>
@@ -102,37 +102,18 @@
     </header>
     <main>
         <article>
-            <button title="Scroll Left" class="left-button" onclick="RecentLeft()">
-                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
-            </button>
-            <div id="recent-posts-js">
-
+            <h1>Recent Posts</h1>
+            <div class="a-wrapper">
+                <a><img src="https://via.placeholder.com/294x207.png"></a>
             </div>
-            <button title="Scroll Right" class="right-button" onclick="RecentRight()">
-                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
-            </button>
         </article>
         <article>
-            <button title="Scroll Left" class="left-button" onclick="IngredientsLeft()">
-                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
-            </button>
-            <div id="ingredients-js">
-
+            <h1>Latest Articles</h1>
+            <div class="a-wrapper">
+                <div class="articles">
+                    <a><p>fh</p></a>
+                </div>
             </div>
-            <button title="Scroll Right" class="right-button" onclick="IngredientsRight()">
-                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
-            </button>
-        </article>
-        <article>
-            <button title="Scroll Left" class="left-button" onclick="RecipesLeft()">
-                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
-            </button>
-            <div id="recipes-js">
-
-            </div>
-            <button title="Scroll Right" class="right-button" onclick="RecipesRight()">
-                <img src="https://cdn.opensauce.uk/assets/global/Arrow.svg">
-            </button>
         </article>
     </main>
     </div>

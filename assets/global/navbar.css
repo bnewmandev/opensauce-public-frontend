@@ -1,159 +1,155 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: Salsa, 'sans-serif';
-    text-decoration: none;
-    color: black;
-    background-color: transparent;
+	padding: 0;
+	margin: 0;
+	font-family: Salsa, "sans-serif";
+	text-decoration: none;
+	color: black;
+	background-color: transparent;
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 a:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 button:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 html {
-    font-size: 12px;
+	font-size: 12px;
 }
 
 body {
-    background-image: url("https://cdn.opensauce.uk/assets/background.png");
-    background-size: cover;
+	background-image: url("https://cdn.opensauce.uk/assets/background.png");
+	background-size: cover;
 }
 
 header {
-    margin-top: 0.5833333333333334rem;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 4.75rem;
+	margin-top: 0.5833333333333334rem;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 4.75rem;
 }
 
 #search-box {
-    margin-left: 1.6666666666666666%; /* 32 / 1920 */ 
-    display: flex;
-    border-radius: 3.3333333333333335rem;
-    width: 23.489583333333333%; /* 451 / 1920 */ 
-    height: 5.083333333333333rem;
-    align-items: center;
-    background-color: white;
+	margin-left: 1.6666666666666666%; /* 32 / 1920 */
+	display: flex;
+	border-radius: 3.3333333333333335rem;
+	width: 23.489583333333333%; /* 451 / 1920 */
+	height: 5.083333333333333rem;
+	align-items: center;
+	background-color: white;
 }
 
 #search-box a {
-    margin-left: 3.547671840354767%; /* 16 / 451 */ 
+	margin-left: 3.547671840354767%; /* 16 / 451 */
 }
 
 #search-box a img {
-    width: 3.1666666666666665rem;
-    height: 3.6666666666666665rem
+	width: 3.1666666666666665rem;
+	height: 3.6666666666666665rem;
 }
 
 #search-box input {
-    margin-right: 0.4166666666666667rem;
-    width: 80% ;
-    border: none;
-    font-size: 1.917rem;
-    color: black;
-    margin-left: 2.5%;
+	margin-right: 0.4166666666666667rem;
+	width: 80%;
+	border: none;
+	font-size: 1.917rem;
+	color: black;
+	margin-left: 2.5%;
 }
 
 #logo {
-    align-self: center;
-    border-radius: 100%;
+	align-self: center;
+	border-radius: 100%;
 }
 
 #logo img {
-    border-radius: 100%;
-    height: 135px;
-    width: 135px;
+	border-radius: 100%;
+	height: 135px;
+	width: 135px;
 }
 
 #container-right {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 21.979166666666666%; /* 422 / 1920 */
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 21.979166666666666%; /* 422 / 1920 */
 }
 
 #login-signup {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 47.86729857819905%; /* 202 / 422 */
-    height: 5.666666666666667rem;
-    font-size: 2rem;
-    border-radius: 5.833333333333333rem;
-    overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 47.86729857819905%; /* 202 / 422 */
+	height: 5.666666666666667rem;
+	font-size: 2rem;
+	border-radius: 5.833333333333333rem;
+	overflow: hidden;
 }
 
 #account button {
-    border: none;
+	border: none;
 }
 
 #account button img {
-    border-radius: 100%;
+	border-radius: 100%;
 }
 
 @media screen and (max-width: 1650px) {
-
-    #login-signup {
-        font-size: 1.5rem;
-    }
-
+	#login-signup {
+		font-size: 1.5rem;
+	}
 }
 
 @media screen and (max-width: 1200px) {
+	#login-signup {
+		font-size: 1rem;
+	}
 
-    #login-signup {
-        font-size: 1rem;
-    }
-
-    header #search-box input {
-        width: 70%;
-    }
-
+	header #search-box input {
+		width: 70%;
+	}
 }
 
 /* PORTRAIT */
 @media screen and (max-width: 900px) {
-    header {
-        flex-direction: column;
-        margin: 0;
-    }
+	header {
+		flex-direction: column;
+		margin: 0;
+	}
 
-    #logo {
-        order: 1;
-        margin: 0;
-        padding: 0;
-    }
+	#logo {
+		order: 1;
+		margin: 0;
+		padding: 0;
+	}
 
-    #search-box {
-        order: 2;
-        width: 60%;
-        margin: 0;
-        padding: 0;
-    }
+	#search-box {
+		order: 2;
+		width: 60%;
+		margin: 0;
+		padding: 0;
+	}
 
-    #container-right {
-        order: 3;
-        width: 100%;
-    }
+	#container-right {
+		order: 3;
+		width: 100%;
+	}
 
-    #login-signup {
-        font-size: 1.5rem;
-    }
+	#login-signup {
+		font-size: 1.5rem;
+	}
 
-    body {
-        background-image: url("https://cdn.opensauce.uk/assets/background-mobile.png");
-        background-size: cover;
-    }
+	body {
+		background-image: url("https://cdn.opensauce.uk/assets/background-mobile.png");
+		background-size: cover;
+	}
 }
