@@ -151,7 +151,7 @@ function GetAccountSettings()
 
 function GetFavorites()
 {
-        currentUser.Favorites.forEach(object) => {
+        currentUser.Favorites.forEach((object) => {
         nodeA = document.createElement("a");
         nodeA.href = object.Link;
 
