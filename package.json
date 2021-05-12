@@ -13,6 +13,6 @@
   },
   "homepage": "https://github.com/opensauce-uk/website#readme",
   "dependencies": {
-    "nodemailer": "^6.4.14"
+    "nodemailer": "^6.4.16"
   }
 }
